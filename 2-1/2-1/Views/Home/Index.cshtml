@@ -5,15 +5,19 @@
 
 <h1 class="title">Price Quotation</h1>
 <br />
+
+<span asp-validation-for="Subtotal"></span>
+<span asp-validation-for="DiscountPercent"></span>
+
 <form method="post" class="form" name="priceQuotationForm">
 
     <div class="grid-container">
 
         <div class="grid-label">Subtotal:</div>
-        <div class="grid-item"><input type="text" name="Subtotal" value="@Model.Subtotal" /></div>
+        <div class="grid-item"><input asp-for="Subtotal" /></div>
 
         <div class="grid-label">Discount Percent:</div>
-        <div class="grid-item"><input type="text" name="DiscountPercent" value="@Model.DiscountPercent" /></div>
+        <div class="grid-item"><input asp-for="DiscountPercent" /></div>
 
         <div class="grid-label">Discount Amount:</div>
         <div class="grid-item">@String.Format("{0:c}", Model.DiscountAmount)</div>

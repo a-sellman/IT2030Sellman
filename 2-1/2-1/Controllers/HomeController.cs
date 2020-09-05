@@ -25,6 +25,13 @@ namespace _2_1.Controllers
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
 
+        [HttpGet]
+        public IActionResult Index()
+        {
+            return View(new PriceQuotation());
+        }
+
+        [HttpPost]
         public IActionResult Index(PriceQuotation request)
         {
             _logger.LogTrace($"Received price quotation request for subtotal {request.Subtotal} and discount percent {request.DiscountPercent}.");

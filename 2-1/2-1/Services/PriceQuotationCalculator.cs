@@ -4,9 +4,9 @@ namespace _2_1.Services
 {
     public class PriceQuotationCalculator : IPriceQuotationCalculator
     {
-        public PriceQuotation Calculate(decimal subtotal, decimal discountPercent)
+        public PriceQuotation Calculate(decimal subtotal, int discountPercent)
         {
-            var discountAmount = subtotal * (discountPercent / 100);
+            var discountAmount = subtotal * (discountPercent / 100.0m);
             var total = subtotal - discountAmount;
 
             return new PriceQuotation()

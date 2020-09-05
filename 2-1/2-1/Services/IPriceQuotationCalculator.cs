@@ -4,6 +4,6 @@ namespace _2_1.Services
 {
     public interface IPriceQuotationCalculator
     {
-        PriceQuotation Calculate(decimal subtotal, decimal discountPercent);
+        PriceQuotation Calculate(decimal subtotal, int discountPercent);
     }
 }
