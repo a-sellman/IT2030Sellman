@@ -1,3 +1,4 @@
+using _2_1.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -47,6 +48,7 @@ namespace _2_1
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
+            services.AddScoped<IPriceQuotationCalculator, PriceQuotationCalculator>();
         }
     }
 }

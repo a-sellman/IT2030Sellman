@@ -1,8 +1,26 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Price Quotation";
 }
+@model PriceQuotation
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<h1 class="title">Price Quotation</h1>
+<br />
+<form method="post" class="form" name="priceQuotationForm">
+
+    <div class="grid-container">
+
+        <div class="grid-label">Subtotal:</div>
+        <div class="grid-item"><input type="text" name="Subtotal" value="@Model.Subtotal" /></div>
+
+        <div class="grid-label">Discount Percent:</div>
+        <div class="grid-item"><input type="text" name="DiscountPercent" value="@Model.DiscountPercent" /></div>
+
+        <div class="grid-label">Discount Amount:</div>
+        <div class="grid-item">@String.Format("{0:c}", Model.DiscountAmount)</div>
+
+        <div class="grid-label">Total:</div>
+        <div class="grid-item">@String.Format("{0:c}", Model.Total)</div>
+
+        <div class="grid-row"><button type="submit" name="Calculate">Calculate</button> <a href="" onclick="document.priceQuotationForm.clear();">Clear</a></div>
+    </div>
+</form>
