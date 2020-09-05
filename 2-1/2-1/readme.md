@@ -1,1 +1,1 @@
-![Sample of Running App](../sample.png)
+![Sample of Running App](sample.png)
