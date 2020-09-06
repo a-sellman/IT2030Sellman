@@ -9,12 +9,12 @@ namespace _2_1.Models
         [Display(Name = "Discount Percent")]
         [Required]
         [Range(0, 100)]
-        public int DiscountPercent { get; set; }
+        public int? DiscountPercent { get; set; }
 
         [Display(Name = "Subtotal")]
         [Required]
-        [DataType(DataType.Currency)]
-        public decimal Subtotal { get; set; }
+        [Range(0.01, double.MaxValue, ErrorMessage = "Subtotal must be greater than 0.00.")]
+        public decimal? Subtotal { get; set; }
 
         public decimal Total { get; set; }
     }

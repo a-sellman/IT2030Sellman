@@ -35,7 +35,13 @@ namespace _2_1.Controllers
         public IActionResult Index(PriceQuotation request)
         {
             _logger.LogTrace($"Received price quotation request for subtotal {request.Subtotal} and discount percent {request.DiscountPercent}.");
-            return View(_calculator.Calculate(request.Subtotal, request.DiscountPercent));
+
+            if (ModelState.IsValid)
+            {
+                return View(_calculator.Calculate(request.Subtotal.Value, request.DiscountPercent.Value));
+            }
+
+            return Index();
         }
     }
 }
