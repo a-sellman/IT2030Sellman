@@ -1,5 +1,4 @@
 ﻿using _2_2.Models;
-using System;
 
 namespace _2_2.Services
 {
@@ -10,9 +9,9 @@ namespace _2_2.Services
             return new TipCalculation()
             {
                 CostOfMeal = costOfMeal,
-                Tip15Percent = Math.Max(costOfMeal * 0.15m, 0.0m),
-                Tip20Percent = Math.Max(costOfMeal * 0.20m, 0.0m),
-                Tip25Percent = Math.Max(costOfMeal * 0.25m, 0.0m),
+                Tip15Percent = costOfMeal * 0.15m,
+                Tip20Percent = costOfMeal * 0.20m,
+                Tip25Percent = costOfMeal * 0.25m,
             };
         }
     }

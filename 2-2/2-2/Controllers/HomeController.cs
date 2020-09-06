@@ -35,13 +35,12 @@ namespace _2_2.Controllers
         public IActionResult Index(TipCalculation request)
         {
             _logger.LogTrace($"Received tip calculation request for cost of meal {request.CostOfMeal}.");
-            if (request.CostOfMeal.HasValue)
+            if (ModelState.IsValid)
             {
                 return View(_calculator.Calculate(request.CostOfMeal.Value));
             }
 
             return Index();
-
         }
     }
 }
