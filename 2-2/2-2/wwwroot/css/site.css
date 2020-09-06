@@ -1,0 +1,31 @@
+﻿.title {
+    color: darkblue;
+    margin-top: 100px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: max-content;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+
+}
+
+.grid-label {
+    grid-column-start: 1;
+    grid-column-end: 1;
+}
+
+.grid-item {
+    grid-column-start: 2;
+    grid-column-end: 2;
+}
+
+.grid-row {
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.validation-summary-valid {
+    display: none;
+}
