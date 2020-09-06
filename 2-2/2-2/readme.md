@@ -1,1 +1,2 @@
-![Sample of Running App](./example.PNG)
+Example of Tip Calculator
+![Sample of Tip Calculator](./example.png)
