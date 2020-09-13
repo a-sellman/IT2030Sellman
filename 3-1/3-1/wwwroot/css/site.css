@@ -9,13 +9,13 @@ h1 {
 }
 
 .jumbotron {
-    background-color: green;
+    background-color: #28a745;
     color: white;
 }
 
 .btn {
     color: white;
-    background-color: green;
+    background-color: #28a745;
 }
 .fas {
     color: white;
