@@ -2,7 +2,6 @@
 /* Row styles */
 .row {
     margin-bottom: 0.5rem;
-
 }
 
 /* column style*/
@@ -11,6 +10,7 @@
     padding: 0.5rem;
 }
 
+/* Validation */
 .validation-summary-valid {
     display: none;
 }
