@@ -2,8 +2,24 @@
 /* Row styles */
 .row {
     margin-bottom: 0.5rem;
+    }
+
+h1 {
+    font-size: 4rem;
 }
 
+.jumbotron {
+    background-color: green;
+    color: white;
+}
+
+.btn {
+    color: white;
+    background-color: green;
+}
+.fas {
+    color: white;
+}
 /* column style*/
 
 .row div {
