@@ -3,8 +3,6 @@
 }
 @model PriceQuotation
 
-<h1 class="title">Price Quotation</h1>
-<br />
 
 <span asp-validation-for="Subtotal"></span>
 <span asp-validation-for="DiscountPercent"></span>
@@ -12,19 +10,31 @@
 <form method="post" class="form" name="priceQuotationForm">
 
     <div class="grid-container">
+        <div class="row">
+            <div class="col-md-4 col-sm-6">Subtotal:</div>
+            <div class="col-md-4 col-sm-6"><input asp-for="Subtotal" /></div>
+        </div>
+        
+        <div class="row">
+            <div class="col-md-4 col-sm-6">Discount Percent:</div>
+            <div class="col-md-4 col-sm-6"><input asp-for="DiscountPercent" /></div>
+        </div>
 
-        <div class="grid-label">Subtotal:</div>
-        <div class="grid-item"><input asp-for="Subtotal" /></div>
+        <div class="row">
+            <div class="col-md-4 col-sm-6">Discount Amount:</div>
+            <div class="col-md-8 col-sm-6">@String.Format("{0:c}", Model.DiscountAmount)</div>
+        </div>
 
-        <div class="grid-label">Discount Percent:</div>
-        <div class="grid-item"><input asp-for="DiscountPercent" /></div>
+  
+        <div class="row">
+            <div class="col-md-10 col-sm-6">Total:</div>
+            <div class="col-md-12 col-sm-6">@String.Format("{0:c}", Model.Total)</div>
+        </div>
+        
 
-        <div class="grid-label">Discount Amount:</div>
-        <div class="grid-item">@String.Format("{0:c}", Model.DiscountAmount)</div>
 
-        <div class="grid-label">Total:</div>
-        <div class="grid-item">@String.Format("{0:c}", Model.Total)</div>
-
-        <div class="grid-row"><button type="submit" name="Calculate">Calculate</button> <a href="" onclick="document.priceQuotationForm.clear();">Clear</a></div>
-    </div>
+        <div class="row">
+         <button type="submit" class="btn btn-outline-secondary" name="Calculate">Calculate</button> <button onclick="document.priceQuotationForm.clear();" class="btn btn-outline-secondary">Clear</button></div>
+        </div>
+        
 </form>
