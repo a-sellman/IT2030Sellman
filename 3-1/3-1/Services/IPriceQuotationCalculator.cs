@@ -1,6 +1,6 @@
-﻿using _2_1.Models;
+﻿using _3_1.Models;
 
-namespace _2_1.Services
+namespace _3_1.Services
 {
     public interface IPriceQuotationCalculator
     {

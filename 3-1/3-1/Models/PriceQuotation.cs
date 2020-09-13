@@ -1,6 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 
-namespace _2_1.Models
+namespace _3_1.Models
 {
     public class PriceQuotation
     {

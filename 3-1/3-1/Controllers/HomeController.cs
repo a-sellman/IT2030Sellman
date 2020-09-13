@@ -1,10 +1,10 @@
-﻿using _2_1.Models;
-using _2_1.Services;
+﻿using _3_1.Models;
+using _3_1.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System.Diagnostics;
 
-namespace _2_1.Controllers
+namespace _3_1.Controllers
 {
     public class HomeController : Controller
     {
