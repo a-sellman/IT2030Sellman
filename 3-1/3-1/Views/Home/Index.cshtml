@@ -3,47 +3,48 @@
 }
 @model PriceQuotation
 
-    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
-    <title> Price Quotation</title>
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
 
-   <div class="jumbotron col-md-8 col-sm-8">
-    
+<title> Price Quotation</title>
+
+<div class="jumbotron col-md-8 col-sm-8">
+
     <h1><i class="fas fa-money-bill-alt"></i> Price Quotation </h1>
-   </div>
+</div>
 
-    <form method="post" class="form-horizontal" name="priceQuotationForm">
+<form method="post" class="form-horizontal" name="priceQuotationForm">
 
-        <div class="row">
-            <label for="subtotal" class="control-label col-md-2 col-sm-4">Subtotal:</label>
-            <input asp-for="Subtotal" class="form-control col-md-2 col-sm-4" /> <br />
-            <span asp-validation-for="Subtotal" style="color: red"></span>
-        </div>
+    <div class="row">
+        <label for="subtotal" class="control-label col-md-2 col-sm-4">Subtotal:</label>
+        <input asp-for="Subtotal" class="form-control col-md-2 col-sm-4" /> <br />
+        <span asp-validation-for="Subtotal" style="color: red"></span>
+    </div>
 
-        <div class="w-100"></div>
+    <div class="w-100"></div>
 
-        <div class="row">
-            <div class="control-label col-md-2 col-sm-4">Discount Percent:</div>
-            <input asp-for="DiscountPercent" class="form-control col-md-2 col-sm-4" /> <br />
-            <span asp-validation-for="DiscountPercent" style="color: red"></span>
-        </div>
+    <div class="row">
+        <div class="control-label col-md-2 col-sm-4">Discount Percent:</div>
+        <input asp-for="DiscountPercent" class="form-control col-md-2 col-sm-4" /> <br />
+        <span asp-validation-for="DiscountPercent" style="color: red"></span>
+    </div>
 
-        <div class="w-100"></div>
+    <div class="w-100"></div>
 
-        <div class="row">
-            <div class="control-label col-md-2 col-sm-4">Discount Amount:</div>
-            <div class="col-md-8 col-sm-6">@String.Format("{0:c}", Model.DiscountAmount)</div>
-        </div>
+    <div class="row">
+        <div class="control-label col-md-2 col-sm-4">Discount Amount:</div>
+        <div class="col-md-8 col-sm-6">@String.Format("{0:c}", Model.DiscountAmount)</div>
+    </div>
 
-        <div class="w-100"></div>
+    <div class="w-100"></div>
 
-        <div class="row">
-            <div class="control-label col-md-2 col-sm-4">Total:</div>
-            <div class="col-md-4 col-sm-6">@String.Format("{0:c}", Model.Total)</div>
-        </div>
+    <div class="row">
+        <div class="control-label col-md-2 col-sm-4">Total:</div>
+        <div class="col-md-4 col-sm-6">@String.Format("{0:c}", Model.Total)</div>
+    </div>
 
-        <div class="row">
-            <button type="submit" class="btn btn-outline-secondary" style="margin-right: 10px"name="Calculate">Calculate</button> 
-            <button onclick="document.priceQuotationForm.clear();" class="btn btn-outline-secondary">Clear</button>
-        </div>
+    <div class="row">
+        <button type="submit" class="btn btn-outline-secondary" style="margin-right: 10px" name="Calculate">Calculate</button>
+        <button onclick="document.priceQuotationForm.clear();" class="btn btn-outline-secondary">Clear</button>
+    </div>
 
-    </form>
+</form>

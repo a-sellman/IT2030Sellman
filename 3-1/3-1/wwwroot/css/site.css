@@ -2,7 +2,7 @@
 /* Row styles */
 .row {
     margin-bottom: 0.5rem;
-    }
+}
 
 h1 {
     font-size: 4rem;
@@ -17,6 +17,7 @@ h1 {
     color: white;
     background-color: #28a745;
 }
+
 .fas {
     color: white;
 }
@@ -30,5 +31,3 @@ h1 {
 .validation-summary-valid {
     display: none;
 }
-
-
