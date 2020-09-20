@@ -1,15 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Runtime.CompilerServices;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
+﻿using System.ComponentModel.DataAnnotations;
 
 namespace _4_1.Models
 {
-        public class Contact
+    public class Contact
     {
+        [Required(ErrorMessage = "Please enter an email.")]
+        public int CategoryID { get; set; }
+
+        [Required(ErrorMessage = "Please enter a phone number.")]
+        public string Email { get; set; }
+
         [Key]
         public string FName { get; set; }
 
@@ -17,14 +17,8 @@ namespace _4_1.Models
         public string LName { get; set; }
 
         [Required(ErrorMessage = "Please enter a last name.")]
-        public int? PhoneNumber { get; set; }
+        public int PhoneNumber { get; set; }
 
-        [Required(ErrorMessage = "Please enter a phone number.")]
-        public string Email { get; set; }
-
-        [Required(ErrorMessage ="Please enter an email.")]
-        public int CategoryID { get; set; }
-        public Category Category { get; set; }
-
+        //        public Category Category { get; set; }
     }
 }

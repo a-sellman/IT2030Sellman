@@ -231,7 +231,6 @@ C:\Users\april\Source\Repos\a-sellman\IT2030Sellman\4-1\4-1\bin\Debug\netcoreapp
 C:\Users\april\Source\Repos\a-sellman\IT2030Sellman\4-1\4-1\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
 C:\Users\april\Source\Repos\a-sellman\IT2030Sellman\4-1\4-1\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
 C:\Users\april\Source\Repos\a-sellman\IT2030Sellman\4-1\4-1\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
-C:\Users\april\Source\Repos\a-sellman\IT2030Sellman\4-1\4-1\obj\Debug\netcoreapp3.1\4-1.csprojAssemblyReference.cache
 C:\Users\april\Source\Repos\a-sellman\IT2030Sellman\4-1\4-1\obj\Debug\netcoreapp3.1\4-1.AssemblyInfoInputs.cache
 C:\Users\april\Source\Repos\a-sellman\IT2030Sellman\4-1\4-1\obj\Debug\netcoreapp3.1\4-1.AssemblyInfo.cs
 C:\Users\april\Source\Repos\a-sellman\IT2030Sellman\4-1\4-1\obj\Debug\netcoreapp3.1\4-1.csproj.CoreCompileInputs.cache
@@ -258,3 +257,4 @@ C:\Users\april\Source\Repos\a-sellman\IT2030Sellman\4-1\4-1\obj\Debug\netcoreapp
 C:\Users\april\Source\Repos\a-sellman\IT2030Sellman\4-1\4-1\obj\Debug\netcoreapp3.1\4-1.dll
 C:\Users\april\Source\Repos\a-sellman\IT2030Sellman\4-1\4-1\obj\Debug\netcoreapp3.1\4-1.pdb
 C:\Users\april\Source\Repos\a-sellman\IT2030Sellman\4-1\4-1\obj\Debug\netcoreapp3.1\4-1.genruntimeconfig.cache
+C:\Users\april\Source\Repos\a-sellman\IT2030Sellman\4-1\4-1\obj\Debug\netcoreapp3.1\4-1.csprojAssemblyReference.cache

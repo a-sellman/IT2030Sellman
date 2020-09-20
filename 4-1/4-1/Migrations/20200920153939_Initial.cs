@@ -4,13 +4,22 @@ namespace _4_1.Migrations
 {
     public partial class Initial : Migration
     {
+        protected override void Down(MigrationBuilder migrationBuilder)
+        {
+            migrationBuilder.DropTable(
+                name: "Contacts");
+
+            migrationBuilder.DropTable(
+                name: "Categories");
+        }
+
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
                 name: "Categories",
                 columns: table => new
                 {
-                    CategoryID = table.Column<string>(nullable: false),
+                    CategoryID = table.Column<int>(nullable: false),
                     Name = table.Column<string>(nullable: true)
                 },
                 constraints: table =>
@@ -26,7 +35,7 @@ namespace _4_1.Migrations
                     LName = table.Column<string>(nullable: false),
                     PhoneNumber = table.Column<int>(nullable: false),
                     Email = table.Column<string>(nullable: false),
-                    CategoryID = table.Column<string>(nullable: false)
+                    CategoryID = table.Column<int>(nullable: false)
                 },
                 constraints: table =>
                 {
@@ -42,46 +51,37 @@ namespace _4_1.Migrations
             migrationBuilder.InsertData(
                 table: "Categories",
                 columns: new[] { "CategoryID", "Name" },
-                values: new object[] { "F", "Friend" });
+                values: new object[] { 1, "Friend" });
 
             migrationBuilder.InsertData(
                 table: "Categories",
                 columns: new[] { "CategoryID", "Name" },
-                values: new object[] { "W", "Work" });
+                values: new object[] { 2, "Work" });
 
             migrationBuilder.InsertData(
                 table: "Categories",
                 columns: new[] { "CategoryID", "Name" },
-                values: new object[] { "FM", "Family" });
+                values: new object[] { 3, "Family" });
 
             migrationBuilder.InsertData(
                 table: "Contacts",
-                columns: new[] { "FName", "CategoryID", "Email", "LName", "PhoneNumber" },
-                values: new object[] { "Jane", "F", "janedoe@gmail.com", "Doe", -9999 });
+                columns: new[] { "FName", "LName", "CategoryID", "Email", "PhoneNumber" },
+                values: new object[] { "Jane", "Doe", 1, "janedoe@gmail.com", 9999 });
 
             migrationBuilder.InsertData(
                 table: "Contacts",
-                columns: new[] { "FName", "CategoryID", "Email", "LName", "PhoneNumber" },
-                values: new object[] { "John", "W", "johndoe@gmail.com", "Doe", -1111 });
+                columns: new[] { "FName", "LName", "CategoryID", "Email", "PhoneNumber" },
+                values: new object[] { "John", "Doe,", 3, "johndoe@gmail.com", 1111 });
 
             migrationBuilder.InsertData(
                 table: "Contacts",
-                columns: new[] { "FName", "CategoryID", "Email", "LName", "PhoneNumber" },
-                values: new object[] { "Mary", "FM", "maryjohnson@gmail.com", "Johnson", -2222 });
+                columns: new[] { "FName", "LName", "CategoryID", "Email", "PhoneNumber" },
+                values: new object[] { "Mary", "Johnson", 3, "maryjohnson@gmail.com", 2222 });
 
             migrationBuilder.CreateIndex(
                 name: "IX_Contacts_CategoryID",
                 table: "Contacts",
                 column: "CategoryID");
-        }
-
-        protected override void Down(MigrationBuilder migrationBuilder)
-        {
-            migrationBuilder.DropTable(
-                name: "Contacts");
-
-            migrationBuilder.DropTable(
-                name: "Categories");
         }
     }
 }

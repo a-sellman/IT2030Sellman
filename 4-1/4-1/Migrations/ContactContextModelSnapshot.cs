@@ -21,8 +21,10 @@ namespace _4_1.Migrations
 
             modelBuilder.Entity("_4_1.Models.Category", b =>
                 {
-                    b.Property<string>("CategoryID")
-                        .HasColumnType("nvarchar(450)");
+                    b.Property<int>("CategoryID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<string>("Name")
                         .HasColumnType("nvarchar(max)");
@@ -34,17 +36,17 @@ namespace _4_1.Migrations
                     b.HasData(
                         new
                         {
-                            CategoryID = "F",
+                            CategoryID = 1,
                             Name = "Friend"
                         },
                         new
                         {
-                            CategoryID = "W",
+                            CategoryID = 2,
                             Name = "Work"
                         },
                         new
                         {
-                            CategoryID = "FM",
+                            CategoryID = 3,
                             Name = "Family"
                         });
                 });
@@ -54,9 +56,8 @@ namespace _4_1.Migrations
                     b.Property<string>("FName")
                         .HasColumnType("nvarchar(450)");
 
-                    b.Property<string>("CategoryID")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(450)");
+                    b.Property<int>("CategoryID")
+                        .HasColumnType("int");
 
                     b.Property<string>("Email")
                         .IsRequired()
@@ -72,44 +73,33 @@ namespace _4_1.Migrations
 
                     b.HasKey("FName");
 
-                    b.HasIndex("CategoryID");
-
                     b.ToTable("Contacts");
 
                     b.HasData(
                         new
                         {
                             FName = "Jane",
-                            CategoryID = "F",
+                            CategoryID = 1,
                             Email = "janedoe@gmail.com",
                             LName = "Doe",
-                            PhoneNumber = -9999
+                            PhoneNumber = 9999
                         },
                         new
                         {
                             FName = "John",
-                            CategoryID = "W",
+                            CategoryID = 2,
                             Email = "johndoe@gmail.com",
                             LName = "Doe",
-                            PhoneNumber = -1111
+                            PhoneNumber = 1111
                         },
                         new
                         {
                             FName = "Mary",
-                            CategoryID = "FM",
+                            CategoryID = 3,
                             Email = "maryjohnson@gmail.com",
                             LName = "Johnson",
-                            PhoneNumber = -2222
+                            PhoneNumber = 2222
                         });
-                });
-
-            modelBuilder.Entity("_4_1.Models.Contact", b =>
-                {
-                    b.HasOne("_4_1.Models.Category", "Category")
-                        .WithMany()
-                        .HasForeignKey("CategoryID")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
                 });
 #pragma warning restore 612, 618
         }
