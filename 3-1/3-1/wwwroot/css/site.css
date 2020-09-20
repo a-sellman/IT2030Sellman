@@ -1,0 +1,33 @@
+﻿
+/* Row styles */
+.row {
+    margin-bottom: 0.5rem;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+.jumbotron {
+    background-color: #28a745;
+    color: white;
+}
+
+.btn {
+    color: white;
+    background-color: #28a745;
+}
+
+.fas {
+    color: white;
+}
+/* column style*/
+
+.row div {
+    padding: 0.5rem;
+}
+
+/* Validation */
+.validation-summary-valid {
+    display: none;
+}
