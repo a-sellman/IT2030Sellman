@@ -1,0 +1,3 @@
+InvalidCastException: Unable to cast object of type 'System.String' to type 'System.Int32'.
+
+I could not figure out how to fix this error unfortunately.  I will continue to work on it next week along with Lab 5. 
