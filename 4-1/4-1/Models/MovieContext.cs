@@ -31,7 +31,7 @@ namespace _4_1.Models
             modelBuilder.Entity<Movie>().HasData(
                 new Movie { MovieID = 1, Name = "Casablanca", Year = 1942, Rating = 4, GenreID = "D" },
                 new Movie { MovieID = 2, Name = "Wonder Woman", Year = 2017, Rating = 5, GenreID = "A" },
-               new Movie { MovieID = 1, Name = "Moonstruck", Year = 1988, Rating = 5, GenreID = "R" }
+               new Movie { MovieID = 3, Name = "Moonstruck", Year = 1988, Rating = 5, GenreID = "R" }
             );
         }
     }
