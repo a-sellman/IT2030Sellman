@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\april\\Source\\Repos\\a-sellman\\IT2030Sellman\\4-1\\4-1\\4-1.csproj": {}
+    "C:\\Users\\april\\Source\\Repos\\a-sellman\\IT2030Sellman\\4-1\\4-1\\4-1Sellman.csproj": {}
   },
   "projects": {
-    "C:\\Users\\april\\Source\\Repos\\a-sellman\\IT2030Sellman\\4-1\\4-1\\4-1.csproj": {
+    "C:\\Users\\april\\Source\\Repos\\a-sellman\\IT2030Sellman\\4-1\\4-1\\4-1Sellman.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\april\\Source\\Repos\\a-sellman\\IT2030Sellman\\4-1\\4-1\\4-1.csproj",
-        "projectName": "4-1",
-        "projectPath": "C:\\Users\\april\\Source\\Repos\\a-sellman\\IT2030Sellman\\4-1\\4-1\\4-1.csproj",
+        "projectUniqueName": "C:\\Users\\april\\Source\\Repos\\a-sellman\\IT2030Sellman\\4-1\\4-1\\4-1Sellman.csproj",
+        "projectName": "4-1Sellman",
+        "projectPath": "C:\\Users\\april\\Source\\Repos\\a-sellman\\IT2030Sellman\\4-1\\4-1\\4-1Sellman.csproj",
         "packagesPath": "C:\\Users\\april\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\april\\Source\\Repos\\a-sellman\\IT2030Sellman\\4-1\\4-1\\obj\\",
         "projectStyle": "PackageReference",

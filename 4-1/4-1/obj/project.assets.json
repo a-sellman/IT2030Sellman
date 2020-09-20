@@ -6093,11 +6093,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\april\\Documents\\GitHub\\IT2030Sellman\\4-1\\4-1\\4-1.csproj",
+      "projectUniqueName": "C:\\Users\\april\\Source\\Repos\\a-sellman\\IT2030Sellman\\4-1\\4-1\\4-1.csproj",
       "projectName": "4-1",
-      "projectPath": "C:\\Users\\april\\Documents\\GitHub\\IT2030Sellman\\4-1\\4-1\\4-1.csproj",
+      "projectPath": "C:\\Users\\april\\Source\\Repos\\a-sellman\\IT2030Sellman\\4-1\\4-1\\4-1.csproj",
       "packagesPath": "C:\\Users\\april\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\april\\Documents\\GitHub\\IT2030Sellman\\4-1\\4-1\\obj\\",
+      "outputPath": "C:\\Users\\april\\Source\\Repos\\a-sellman\\IT2030Sellman\\4-1\\4-1\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
