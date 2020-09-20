@@ -8,7 +8,7 @@ namespace _4_1.Models
 {
     public class Category
     {
-        public string CategoryID { get; set; }
+        public int CategoryID { get; set; }
         public string Name { get; set; }
     }
 }

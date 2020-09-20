@@ -23,7 +23,7 @@ namespace _4_1.Models
         public string Email { get; set; }
 
         [Required(ErrorMessage ="Please enter an email.")]
-        public string CategoryID { get; set; }
+        public int CategoryID { get; set; }
         public Category Category { get; set; }
 
     }

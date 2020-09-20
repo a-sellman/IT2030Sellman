@@ -35,7 +35,7 @@ namespace _4_1.Controllers
         {
             if (ModelState.IsValid)
             {
-                if (contact.CategoryID == "")
+                if (contact.CategoryID == 0)
                     context.Contacts.Add(contact);
                 else
                 context.Contacts.Update(contact);
@@ -44,7 +44,7 @@ namespace _4_1.Controllers
             }
             else
             {
-                ViewBag.Action = (contact.CategoryID == "") ? "Add" : "Edit";
+                ViewBag.Action = (contact.CategoryID == 0) ? "Add" : "Edit";
                 ViewBag.Categories = context.Categories.OrderBy(g => g.Name).ToList();
                 return View(contact);
             }
