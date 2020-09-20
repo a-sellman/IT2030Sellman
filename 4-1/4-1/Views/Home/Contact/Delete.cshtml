@@ -1,12 +1,12 @@
-﻿@model Movie 
+﻿@model Contact 
 @{
-    ViewBag.Title = "Delete Movie";
+    ViewBag.Title = "Delete Contact";
 }
 <h1> Confirm Deletion</h1>
-<h3> @Model.Name (@Model.Year)</h3>
+<h3> @Model.FName (@Model.FName)</h3>
 
 <form asp-action="Delete" method="post">
-    <input type="hidden" asp-for="MovieID" />
+    <input type="hidden" asp-for="CategoryID" />
 
     <button type="submit" class="btn btn-primary"> Delete</button>
     <a asp-controller="Home" asp-action="Index" class="btn btn-primary">Cancel</a>

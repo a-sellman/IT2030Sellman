@@ -6,9 +6,9 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace _4_1.Models
 {
-    public class Genre
+    public class Category
     {
-        public string GenreID { get; set; }
+        public string CategoryID { get; set; }
         public string Name { get; set; }
     }
 }

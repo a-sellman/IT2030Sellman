@@ -1,11 +1,11 @@
-﻿@model List<Movie>
+﻿@model List<Contact>
 @{
-ViewBag.Title = "My Movies";
+ViewBag.Title = "Contacts";
 }
 
-<h2> Movie List</h2>
+<h2> Contact List</h2>
 
-<a asp-controller="Movie" asp-action="Add">Add New Movie</a>
+<a asp-controller="Contact" asp-action="Add">Add New Contact</a>
 <table class="table table-bordered table-striped">
     <thead>
         <tr>
@@ -17,19 +17,19 @@ ViewBag.Title = "My Movies";
         </tr>
     </thead>
     <tbody>
-        @foreach (var movie in Model)
+        @foreach (var contact in Model)
         {
             <tr>
-                <td>@movie.Name</td>
-                <td>@movie.Year</td>
-                <td>@movie.Genre</td>
-                <td>@movie.Rating</td
+                <td>@contact.FName</td>
+                <td>@contact.LName</td>
+                <td>@contact.PhoneNumber</td>
+                <td>@contact.Email</td
 
 >               <td>
-                <a asp-controller="Movie" asp-action="Edit"
-                    asp-route-id="@movie.MovieID">Edit</a>
-                <a asp-controller="Movie" asp-action="Delete"
-                   asp-route-id="@movie.MovieID">Delete</a>
+                <a asp-controller="Contact" asp-action="Edit"
+                    asp-route-id="@contact.CategoryID">Edit</a>
+                <a asp-controller="Contact" asp-action="Delete"
+                   asp-route-id="@contact.CategoryID">Delete</a>
                 
                 </td>
             </tr>

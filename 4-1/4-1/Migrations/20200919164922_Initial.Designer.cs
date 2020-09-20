@@ -9,7 +9,7 @@ using _4_1.Models;
 
 namespace _4_1.Migrations
 {
-    [DbContext(typeof(MovieContext))]
+    [DbContext(typeof(ContactContext))]
     [Migration("20200919164922_Initial")]
     partial class Initial
     {

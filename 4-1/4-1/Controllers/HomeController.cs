@@ -11,17 +11,17 @@ using System.Runtime.CompilerServices;
 
 public class HomeController : Controller
 {
-    private MovieContext context { get; set; }
+    private ContactContext context { get; set; }
 
-    public HomeController(MovieContext ctx)
+    public HomeController(ContactContext ctx)
     {
         context = ctx;
     }
 
     public IActionResult Index()
     {
-        var movies = context.Movies.OrderBy(m => m.Name).ToList();
-        return View(movies);
+        var contacts = context.Contacts.OrderBy(m => m.LName).ToList();
+        return View(contacts);
     }
 } 
     /*

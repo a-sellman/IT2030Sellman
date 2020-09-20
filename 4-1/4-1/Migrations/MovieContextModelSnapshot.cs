@@ -8,7 +8,7 @@ using _4_1.Models;
 
 namespace _4_1.Migrations
 {
-    [DbContext(typeof(MovieContext))]
+    [DbContext(typeof(ContactContext))]
     partial class MovieContextModelSnapshot : ModelSnapshot
     {
         protected override void BuildModel(ModelBuilder modelBuilder)

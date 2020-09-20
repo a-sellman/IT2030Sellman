@@ -24,9 +24,9 @@ using Microsoft.Extensions.Hosting;
         {
             
             services.AddControllersWithViews();
-        services.AddDbContext<MovieContext>(options =>
+        services.AddDbContext<ContactContext>(options =>
         options.UseSqlServer(
-            Configuration.GetConnectionString("MovieContext")));
+            Configuration.GetConnectionString("ContactContext")));
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
