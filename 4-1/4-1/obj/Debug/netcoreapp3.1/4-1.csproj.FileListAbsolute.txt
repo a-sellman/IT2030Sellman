@@ -154,6 +154,8 @@ C:\Users\april\Documents\GitHub\IT2030Sellman\4-1\4-1\obj\Debug\netcoreapp3.1\4-
 C:\Users\april\Documents\GitHub\IT2030Sellman\4-1\4-1\obj\Debug\netcoreapp3.1\4-1.TagHelpers.input.cache
 C:\Users\april\Documents\GitHub\IT2030Sellman\4-1\4-1\obj\Debug\netcoreapp3.1\4-1.TagHelpers.output.cache
 C:\Users\april\Documents\GitHub\IT2030Sellman\4-1\4-1\obj\Debug\netcoreapp3.1\4-1.RazorCoreGenerate.cache
+C:\Users\april\Documents\GitHub\IT2030Sellman\4-1\4-1\obj\Debug\netcoreapp3.1\Razor\Views\Home\Contact\Delete.cshtml.g.cs
+C:\Users\april\Documents\GitHub\IT2030Sellman\4-1\4-1\obj\Debug\netcoreapp3.1\Razor\Views\Home\Contact\Edit.cshtml.g.cs
 C:\Users\april\Documents\GitHub\IT2030Sellman\4-1\4-1\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
 C:\Users\april\Documents\GitHub\IT2030Sellman\4-1\4-1\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
 C:\Users\april\Documents\GitHub\IT2030Sellman\4-1\4-1\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
@@ -169,6 +171,3 @@ C:\Users\april\Documents\GitHub\IT2030Sellman\4-1\4-1\obj\Debug\netcoreapp3.1\st
 C:\Users\april\Documents\GitHub\IT2030Sellman\4-1\4-1\obj\Debug\netcoreapp3.1\4-1.dll
 C:\Users\april\Documents\GitHub\IT2030Sellman\4-1\4-1\obj\Debug\netcoreapp3.1\4-1.pdb
 C:\Users\april\Documents\GitHub\IT2030Sellman\4-1\4-1\obj\Debug\netcoreapp3.1\4-1.genruntimeconfig.cache
-C:\Users\april\Documents\GitHub\IT2030Sellman\4-1\4-1\obj\Debug\netcoreapp3.1\4-1.csprojAssemblyReference.cache
-C:\Users\april\Documents\GitHub\IT2030Sellman\4-1\4-1\obj\Debug\netcoreapp3.1\Razor\Views\Home\Contact\Delete.cshtml.g.cs
-C:\Users\april\Documents\GitHub\IT2030Sellman\4-1\4-1\obj\Debug\netcoreapp3.1\Razor\Views\Home\Contact\Edit.cshtml.g.cs

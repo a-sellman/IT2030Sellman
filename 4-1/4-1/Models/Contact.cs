@@ -8,9 +8,9 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace _4_1.Models
 {
-
-    public class Contact
+        public class Contact
     {
+        [Key]
         public string FName { get; set; }
 
         [Required(ErrorMessage = "Please enter a first name.")]
@@ -20,7 +20,7 @@ namespace _4_1.Models
         public int? PhoneNumber { get; set; }
 
         [Required(ErrorMessage = "Please enter a phone number.")]
-        public string? Email { get; set; }
+        public string Email { get; set; }
 
         [Required(ErrorMessage ="Please enter an email.")]
         public string CategoryID { get; set; }
