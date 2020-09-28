@@ -2,7 +2,56 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<style>
+    .jumbotron {
+        background-color: teal;
+        color: white;
+        text-align: center;
+        font-size: 1.5rem;
+        margin-left: 25px;
+        margin-right: 25px;
+        margin-top: 25px;
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+
+    li {
+        float: left;
+    }
+
+        li a {
+            display: block;
+            padding: 8px;
+            background-color: #dddddd;
+        }
+
+    .vertical {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        width: 60px;
+    }
+</style>
+
+<div class="jumbotron">
+    <br />
+    <h1>Frequently Asked Questions</h1>
+    <br />
 </div>
+
+<ul>
+    <li><a href="#home">All FAQ's</a></li>
+    <li><a href="#news">Bootstrap</a></li>
+    <li><a href="#contact">C#</a></li>
+    <li><a href="#about">JavaScript</a></li>
+</ul>
+
+<ul class="vertical">
+    <li><a href="#home">General</a></li>
+    <li><a href="#news">History</a></li>
+</ul>
