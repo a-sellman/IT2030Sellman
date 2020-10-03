@@ -38,6 +38,34 @@
             }
 
         /* Vertical NavBar*/
+
+        .vertical-menu {
+            width: 200px; /* Set a width if you like */
+        }
+
+            .vertical-menu a {
+                background-color: #eee; /* Grey background color */
+                color: black; /* Black text color */
+                display: block; /* Make the links appear below each other */
+                padding: 12px; /* Add some padding */
+                text-decoration: none; /* Remove underline from links */
+            }
+
+                .vertical-menu a:hover {
+                    background-color: #ccc; /* Dark grey background on mouse-over */
+                }
+
+                .vertical-menu a.active {
+                    background-color: #4CAF50; /* Add a green color to the "active/current" link */
+                    color: white;
+                }
+
+        .stylish {
+            text-align: left;
+            margin-left: 230px;
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
     </style>
 </head>
 <body>
@@ -56,6 +84,22 @@
             <li>@Html.ActionLink("Javascript", "JavaScript")</li>
         </ul>
     </form>
+    <div class="vertical-menu">
+        @Html.ActionLink("General", "General")
+        @Html.ActionLink("History", "History")
+    </div>
+
+    <div class="outline col-sm-8 col-md-10 col-lg-12">
+        <div class="col-sm-8 col-md-10 col-lg-12">
+            <h3 class="stylish col-sm-8 col-md-10 col-lg-12"><b>What Is Javascript?</b></h3> <br /> <p class="stylish"> A general purpose scripting language that executes in the web browser</p>
+        </div>
+    </div>
     <br />
+
+    <div class="outline col-sm-8 col-md-10 col-lg-12">
+        <div class="col-sm-8 col-md-10 col-lg-12">
+            <h3 class="stylish col-sm-8 col-md-10 col-lg-12"><b>When Was Javascript First Released?</b></h3><br /><p class="stylish"> In 1995</p>
+        </div>
+    </div>
 </body>
 </html>

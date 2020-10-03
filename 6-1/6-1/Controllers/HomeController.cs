@@ -39,6 +39,20 @@ namespace _6_1.Controllers
         }
 
         [HttpGet]
+        public ActionResult General()
+
+        {
+            return View();
+        }
+
+        [HttpGet]
+        public ActionResult History()
+
+        {
+            return View();
+        }
+
+        [HttpGet]
         public ActionResult Index()
 
         {

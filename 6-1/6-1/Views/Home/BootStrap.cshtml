@@ -4,40 +4,70 @@
 
 <!DOCTYPE html>
 <html>
-<style>
+<head>
+    <style>
 
-    .jumbotron {
-        background-color: teal;
-        color: white;
-        text-align: center;
-        font-size: 1.5rem;
-        margin-left: 25px;
-        margin-right: 25px;
-        margin-top: 25px;
-    }
-
-    ul {
-        list-style-type: none;
-        margin-left: 200px;
-        margin-top: 20px;
-        padding: 0;
-        overflow: hidden;
-    }
-
-    li {
-        float: left;
-    }
-
-        li a {
-            font-size: 20px;
-            color: black;
+        .jumbotron {
+            background-color: teal;
+            color: white;
             text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
+            font-size: 1.5rem;
+            margin-left: 25px;
+            margin-right: 25px;
+            margin-top: 25px;
         }
 
-    /* Vertical NavBar*/
-</style>
+        ul {
+            list-style-type: none;
+            margin-left: 200px;
+            margin-top: 20px;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        li {
+            float: left;
+        }
+
+            li a {
+                font-size: 20px;
+                color: black;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+
+        /* Vertical NavBar*/
+
+        .vertical-menu {
+            width: 200px; /* Set a width if you like */
+        }
+
+            .vertical-menu a {
+                background-color: #eee; /* Grey background color */
+                color: black; /* Black text color */
+                display: block; /* Make the links appear below each other */
+                padding: 12px; /* Add some padding */
+                text-decoration: none; /* Remove underline from links */
+            }
+
+                .vertical-menu a:hover {
+                    background-color: #ccc; /* Dark grey background on mouse-over */
+                }
+
+                .vertical-menu a.active {
+                    background-color: #4CAF50; /* Add a green color to the "active/current" link */
+                    color: white;
+                }
+
+        .stylish {
+            text-align: left;
+            margin-left: 230px;
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
 <body>
     <div class="jumbotron vertical col-sm-8 col-md-10 col-lg-12">
         <br />
@@ -54,5 +84,22 @@
         </ul>
     </form>
     <br />
+    <div class="vertical-menu">
+        @Html.ActionLink("General", "General")
+        @Html.ActionLink("History", "History")
+    </div>
+
+    <div class="col-sm-8 col-md-10 col-lg-12">
+        <h3 class="stylish col-sm-8 col-md-10 col-lg-12"><b>What Is Bootstrap?</b></h3><br />
+        <p class="stylish col-sm-8 col-md-10 col-lg-12"> A CSS framework for creating responsive web apps for multiple screen sizes</p>
+    </div>
+
+    <br />
+
+    <div class="outline col-sm-8 col-md-10 col-lg-12">
+        <div class="col-sm-8 col-md-10 col-lg-12">
+            <h3 class="stylish col-sm-8 col-md-10 col-lg-12"><b>When Was Bootstrap First Released?</b></h3> <br /> <p class="stylish">In 2011</p>
+        </div>
+    </div>
 </body>
 </html>

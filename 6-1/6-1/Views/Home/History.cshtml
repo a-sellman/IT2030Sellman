@@ -1,11 +1,24 @@
-﻿@{
-    ViewData["Title"] = "CSharp";
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+@{
+    ViewData["Title"] = "Home Page";
+
 }
 <!DOCTYPE html>
-
 <html>
+
 <head>
+
     <style>
+
+        h3 {
+            margin-left: 200px;
+            margin-top: 25px;
+        }
 
         .jumbotron {
             background-color: teal;
@@ -69,12 +82,12 @@
     </style>
 </head>
 <body>
+
     <div class="jumbotron vertical col-sm-8 col-md-10 col-lg-12">
         <br />
         <h1>Frequently Asked Questions</h1>
         <br />
     </div>
-
     <form id="form1" runat="server">
         <ul>
             <li>@Html.ActionLink("All FAQ's", "Index")</li>
@@ -83,22 +96,29 @@
             <li>@Html.ActionLink("Javascript", "JavaScript")</li>
         </ul>
     </form>
-    <div class="vertical-menu">
+
+    <div class="vertical-menu col-sm-8 col-md-10 col-lg-12">
         @Html.ActionLink("General", "General")
         @Html.ActionLink("History", "History")
     </div>
 
     <div class="outline col-sm-8 col-md-10 col-lg-12">
         <div class="col-sm-8 col-md-10 col-lg-12">
-            <h3 class="stylish col-sm-8 col-md-10 col-lg-12"><b>What Is C#?</b></h3> <br /> <p class="stylish"> A general purpose object oriented language that uses a concise, Java-like syntax</p>
+            <h3 class="stylish col-sm-8 col-md-10 col-lg-12"><b>When Was Bootstrap First Released?</b></h3> <br /> <p class="stylish">In 2011</p>
         </div>
     </div>
-
     <br />
 
     <div class="outline col-sm-8 col-md-10 col-lg-12">
         <div class="col-sm-8 col-md-10 col-lg-12">
             <h3 class="stylish col-sm-8 col-md-10 col-lg-12"><b>When Was C# First Released?</b></h3> <br /><p class="stylish"> In 2002</p>
+        </div>
+    </div>
+    <br />
+
+    <div class="outline col-sm-8 col-md-10 col-lg-12">
+        <div class="col-sm-8 col-md-10 col-lg-12">
+            <h3 class="stylish col-sm-8 col-md-10 col-lg-12"><b>When Was Javascript First Released?</b></h3><br /><p class="stylish"> In 1995</p>
         </div>
     </div>
 </body>

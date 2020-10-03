@@ -96,3 +96,5 @@ C:\Users\april\Source\Repos\a-sellman\IT2030Sellman\6-1\6-1\obj\Debug\netcoreapp
 C:\Users\april\Source\Repos\a-sellman\IT2030Sellman\6-1\6-1\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
 C:\Users\april\Source\Repos\a-sellman\IT2030Sellman\6-1\6-1\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ViewImports.cshtml.g.cs
 C:\Users\april\Source\Repos\a-sellman\IT2030Sellman\6-1\6-1\obj\Debug\netcoreapp3.1\Razor\Views\Home\Csharp.cshtml.g.cs
+C:\Users\april\Source\Repos\a-sellman\IT2030Sellman\6-1\6-1\obj\Debug\netcoreapp3.1\Razor\Views\Home\General.cshtml.g.cs
+C:\Users\april\Source\Repos\a-sellman\IT2030Sellman\6-1\6-1\obj\Debug\netcoreapp3.1\Razor\Views\Home\History.cshtml.g.cs
