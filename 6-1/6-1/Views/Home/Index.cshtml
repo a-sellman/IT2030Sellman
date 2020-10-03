@@ -1,52 +1,61 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
+
 }
+<!DOCTYPE html>
+<html>
 
-<style>
+<head>
 
-    .jumbotron {
-        background-color: teal;
-        color: white;
-        text-align: center;
-        font-size: 1.5rem;
-        margin-left: 25px;
-        margin-right: 25px;
-        margin-top: 25px;
-    }
+    <style>
 
-    ul {
-        list-style-type: none;
-        margin-left: 200px;
-        margin-top: 20px;
-        padding: 0;
-        overflow: hidden;
-    }
-
-    li {
-        float: left;
-    }
-
-        li a {
-            font-size: 20px;
-            color: black;
+        .jumbotron {
+            background-color: teal;
+            color: white;
             text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
+            font-size: 1.5rem;
+            margin-left: 25px;
+            margin-right: 25px;
+            margin-top: 25px;
         }
 
-    /* Vertical NavBar*/
-</style>
+        ul {
+            list-style-type: none;
+            margin-left: 200px;
+            margin-top: 20px;
+            padding: 0;
+            overflow: hidden;
+        }
 
-<div class="jumbotron vertical col-sm-8 col-md-10 col-lg-12">
-    <br />
-    <h1>Frequently Asked Questions</h1>
-    <br />
-</div>
+        li {
+            float: left;
+        }
 
-<ul>
-    <li><a>All FAQ's</a></li>
-    <li><a>C#</a></li>
-    <li><a>Bootstrap</a></li>
-    <li><a>JavaScript</a></li>
-</ul>
-<br />
+            li a {
+                font-size: 20px;
+                color: black;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+
+        /* Vertical NavBar*/
+    </style>
+</head>
+<body>
+
+    <div class="jumbotron vertical col-sm-8 col-md-10 col-lg-12">
+        <br />
+        <h1>Frequently Asked Questions</h1>
+        <br />
+    </div>
+    <form id="form1" runat="server">
+        <ul>
+            <li>@Html.ActionLink("All FAQ's", "Index")</li>
+            <li>@Html.ActionLink("C#", "Csharp")</li>
+            <li>@Html.ActionLink("Bootstrap", "BootStrap")</li>
+            <li>@Html.ActionLink("Javascript", "JavaScript")</li>
+        </ul>
+    </form>
+</body>
+</html>

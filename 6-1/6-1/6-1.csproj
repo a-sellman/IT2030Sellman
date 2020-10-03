@@ -10,12 +10,20 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Include="Views\Home\BootStrap.cshtml" />
+    <None Include="Views\Home\Csharp.cshtml" />
+    <None Include="Views\Home\Index.cshtml" />
+    <None Include="Views\Home\JavaScript.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="EFCore.BulkExtensions" Version="3.1.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.0">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
+    <PackageReference Include="MySql.Data" Version="8.0.21" />
   </ItemGroup>
 
 </Project>

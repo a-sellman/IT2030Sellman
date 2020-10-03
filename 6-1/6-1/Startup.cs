@@ -53,18 +53,7 @@ namespace _6_1
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<CSharpContext>(options =>
-          options.UseSqlServer(
-              Configuration.GetConnectionString("CSharpContext")));
-
-            services.AddDbContext<BootContext>(options =>
-        options.UseSqlServer(
-            Configuration.GetConnectionString("BootContext")));
             services.AddControllersWithViews();
-
-            services.AddDbContext<JContext>(options =>
-        options.UseSqlServer(
-            Configuration.GetConnectionString("JContext")));
         }
     }
 }
