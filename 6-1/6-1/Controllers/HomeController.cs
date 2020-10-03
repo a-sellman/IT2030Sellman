@@ -19,14 +19,14 @@ namespace _6_1.Controllers
         }
 
         [HttpGet]
-        public ActionResult BootStrap()
+        public ActionResult BootStrap(int id, string role)
 
         {
             return View();
         }
 
         [HttpGet]
-        public ActionResult Csharp()
+        public ActionResult Csharp(int id, string role)
 
         {
             return View();
@@ -39,28 +39,28 @@ namespace _6_1.Controllers
         }
 
         [HttpGet]
-        public ActionResult General()
+        public ActionResult General(int id, string role)
 
         {
             return View();
         }
 
         [HttpGet]
-        public ActionResult History()
+        public ActionResult History(int id, string role)
 
         {
             return View();
         }
 
         [HttpGet]
-        public ActionResult Index()
+        public ActionResult Index(int id, string role)
 
         {
             return View();
         }
 
         [HttpGet]
-        public ActionResult JavaScript()
+        public ActionResult JavaScript(int id, string role)
 
         {
             return View();
