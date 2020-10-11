@@ -18,10 +18,31 @@ namespace _7_1.Controllers
             _logger = logger;
         }
 
+        [HttpGet]
+        public ActionResult About()
+
+        {
+            return View();
+        }
+
+        [HttpGet]
+        public ActionResult Contact(int id, string role)
+
+        {
+            return View();
+        }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+        }
+
+        [HttpGet]
+        public ActionResult Help()
+
+        {
+            return View();
         }
 
         public IActionResult Index()

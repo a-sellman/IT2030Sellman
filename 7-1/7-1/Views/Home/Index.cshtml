@@ -2,16 +2,43 @@
     ViewData["Title"] = "Home";
 }
 
-<div class="jumbotron vertical col-sm-8 col-md-10 col-lg-12">
-    <br />
-    <h1>Frequently Asked Questions</h1>
-    <br />
-</div>
-<form id="form1" runat="server">
-    <ul>
-        <li>@Html.ActionLink("Home", "Index")</li>
-        <li>@Html.ActionLink("Page 1", "Page1")</li>
-        <li>@Html.ActionLink("Page 2", "Page2")</li>
-        <li>@Html.ActionLink("Page 3", "Page3")</li>
-    </ul>
-</form>
+<style>
+
+    button {
+        background-color: white;
+        color: black;
+        font-size: 20px;
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+    }
+
+    li {
+        float: left;
+    }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+            li a:hover {
+                background-color: #111;
+            }
+</style>
+
+<ul class="vertical col-sm-8 col-md-10 col-lg-12">
+    <li style="color:white"> My Website </li>
+    <li>@Html.ActionLink("Home", "Index")</li>
+    <li>@Html.ActionLink("Contact", "Contact")</li>
+    <li>@Html.ActionLink("About", "About")</li>
+    <li>@Html.ActionLink("Help", "Help")</li>
+</ul>

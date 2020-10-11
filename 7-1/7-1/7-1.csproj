@@ -5,12 +5,4 @@
     <RootNamespace>_7_1</RootNamespace>
   </PropertyGroup>
 
-  <ItemGroup>
-    <Content Remove="Views\Home\About.cshtml" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Include="Views\Home\About.cshtml" />
-  </ItemGroup>
-
 </Project>

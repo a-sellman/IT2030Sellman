@@ -39,3 +39,5 @@ C:\Users\april\source\repos\a-sellman\IT2030Sellman\7-1\7-1\obj\Debug\netcoreapp
 C:\Users\april\Source\Repos\a-sellman\IT2030Sellman\7-1\7-1\obj\Debug\netcoreapp3.1\Razor\Views\Home\Page1.cshtml.g.cs
 C:\Users\april\Source\Repos\a-sellman\IT2030Sellman\7-1\7-1\obj\Debug\netcoreapp3.1\Razor\Views\Home\Page2.cshtml.g.cs
 C:\Users\april\Source\Repos\a-sellman\IT2030Sellman\7-1\7-1\obj\Debug\netcoreapp3.1\Razor\Views\Home\Page3.cshtml.g.cs
+C:\Users\april\Source\Repos\a-sellman\IT2030Sellman\7-1\7-1\obj\Debug\netcoreapp3.1\Razor\Views\Home\About.cshtml.g.cs
+C:\Users\april\Source\Repos\a-sellman\IT2030Sellman\7-1\7-1\obj\Debug\netcoreapp3.1\Razor\Views\Home\Help.cshtml.g.cs

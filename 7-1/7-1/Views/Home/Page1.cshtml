@@ -1,5 +1,57 @@
 ﻿@{
-    ViewBag.Title = "Page 1";
+    ViewData["Title"] = "Page1";
 }
 
-<h1> Page 1</h1>
+<style>
+
+    button {
+        background-color: white;
+        color: black;
+        font-size: 20px;
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+    }
+
+    li {
+        float: left;
+    }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+            li a:hover {
+                background-color: #111;
+            }
+</style>
+
+<ul class="vertical col-sm-8 col-md-10 col-lg-12">
+    <li style="color:white"> My Website </li>
+
+    <li>@Html.ActionLink("Home", "Index")</li>
+    <li>@Html.ActionLink("Contact", "Contact")</li>
+    <li>@Html.ActionLink("About", "About")</li>
+    <li>@Html.ActionLink("Help", "Help")</li>
+</ul>
+<h2> Help Page </h2>
+
+<div class="vertical col-sm-8 col-md-10 col-lg-12">
+    <button> @Html.ActionLink("Home", "Index") </button>
+
+    <button> @Html.ActionLink("Tutorial", "Page1") </button>
+</div>
+<h2 class="vertical col-sm-8 col-md-10 col-lg-12"> Tutorial - Page 1 </h2>
+<p class="vertical col-sm-8 col-md-10 col-lg-12"> This is the first thing you need to know about my website.</p>
+<br />
+<br />
+<button>@Html.ActionLink("Next", "Page2")</button>

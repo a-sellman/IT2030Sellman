@@ -1,5 +1,5 @@
 ﻿@{
-    ViewData["Title"] = "Page3";
+    ViewData["Title"] = "Home";
 }
 
 <style>
@@ -36,23 +36,16 @@
 </style>
 
 <ul class="vertical col-sm-8 col-md-10 col-lg-12">
-    <li style="color:white"> My Website </li>
-
+    My Website
     <li>@Html.ActionLink("Home", "Index")</li>
     <li>@Html.ActionLink("Contact", "Contact")</li>
     <li>@Html.ActionLink("About", "About")</li>
     <li>@Html.ActionLink("Help", "Help")</li>
 </ul>
-<h2 class="vertical col-sm-8 col-md-10 col-lg-12"> Help Page </h2>
+<h2> Help Page </h2>
 
 <div class="vertical col-sm-8 col-md-10 col-lg-12">
     <button> @Html.ActionLink("Home", "Index") </button>
 
     <button> @Html.ActionLink("Tutorial", "Page1") </button>
 </div>
-<h2 class="vertical col-sm-8 col-md-10 col-lg-12"> Tutorial - Page 3 </h2>
-<p class="vertical col-sm-8 col-md-10 col-lg-12"> This is the third thing you need to know about my website.</p>
-
-<br />
-<br />
-<button>@Html.ActionLink("Prev", "Page2")</button>

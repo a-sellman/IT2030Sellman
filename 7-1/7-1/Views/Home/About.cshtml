@@ -1,5 +1,40 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
+﻿@{
+    ViewData["Title"] = "About";
 }
+
+<style>
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+    }
+
+    li {
+        float: left;
+    }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+            li a:hover {
+                background-color: #111;
+            }
+</style>
+
+<ul class="vertical col-sm-8 col-md-10 col-lg-12">
+    <li style="color:white"> My Website </li>
+
+    <li>@Html.ActionLink("Home", "Index")</li>
+    <li>@Html.ActionLink("Contact", "Contact")</li>
+    <li>@Html.ActionLink("About", "About")</li>
+</ul>
+
+<h1 class="vertical col-sm-8 col-md-10 col-lg-12"> Contact Me</h1>
