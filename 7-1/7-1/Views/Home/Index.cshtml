@@ -1,8 +1,17 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Home";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="jumbotron vertical col-sm-8 col-md-10 col-lg-12">
+    <br />
+    <h1>Frequently Asked Questions</h1>
+    <br />
 </div>
+<form id="form1" runat="server">
+    <ul>
+        <li>@Html.ActionLink("Home", "Index")</li>
+        <li>@Html.ActionLink("Page 1", "Page1")</li>
+        <li>@Html.ActionLink("Page 2", "Page2")</li>
+        <li>@Html.ActionLink("Page 3", "Page3")</li>
+    </ul>
+</form>

@@ -22,11 +22,6 @@ C:\Users\april\source\repos\a-sellman\IT2030Sellman\7-1\7-1\obj\Debug\netcoreapp
 C:\Users\april\source\repos\a-sellman\IT2030Sellman\7-1\7-1\obj\Debug\netcoreapp3.1\Razor\Views\Home\Contact.cshtml.g.cs
 C:\Users\april\source\repos\a-sellman\IT2030Sellman\7-1\7-1\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
 C:\Users\april\source\repos\a-sellman\IT2030Sellman\7-1\7-1\obj\Debug\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
-C:\Users\april\source\repos\a-sellman\IT2030Sellman\7-1\7-1\obj\Debug\netcoreapp3.1\Razor\Views\Home\Tutorial\Page1.cshtml.g.cs
-C:\Users\april\source\repos\a-sellman\IT2030Sellman\7-1\7-1\obj\Debug\netcoreapp3.1\Razor\Views\Home\Tutorial\Page2.cshtml.g.cs
-C:\Users\april\source\repos\a-sellman\IT2030Sellman\7-1\7-1\obj\Debug\netcoreapp3.1\Razor\Views\Home\Tutorial\Page3.cshtml.g.cs
-C:\Users\april\source\repos\a-sellman\IT2030Sellman\7-1\7-1\obj\Debug\netcoreapp3.1\Razor\Views\Home\Tutorial\_ViewImports.cshtml.g.cs
-C:\Users\april\source\repos\a-sellman\IT2030Sellman\7-1\7-1\obj\Debug\netcoreapp3.1\Razor\Views\Home\Tutorial\_ViewStart.cshtml.g.cs
 C:\Users\april\source\repos\a-sellman\IT2030Sellman\7-1\7-1\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
 C:\Users\april\source\repos\a-sellman\IT2030Sellman\7-1\7-1\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
 C:\Users\april\source\repos\a-sellman\IT2030Sellman\7-1\7-1\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
@@ -41,3 +36,6 @@ C:\Users\april\source\repos\a-sellman\IT2030Sellman\7-1\7-1\obj\Debug\netcoreapp
 C:\Users\april\source\repos\a-sellman\IT2030Sellman\7-1\7-1\obj\Debug\netcoreapp3.1\7-1.pdb
 C:\Users\april\source\repos\a-sellman\IT2030Sellman\7-1\7-1\obj\Debug\netcoreapp3.1\7-1.genruntimeconfig.cache
 C:\Users\april\source\repos\a-sellman\IT2030Sellman\7-1\7-1\obj\Debug\netcoreapp3.1\7-1.csproj.CopyComplete
+C:\Users\april\Source\Repos\a-sellman\IT2030Sellman\7-1\7-1\obj\Debug\netcoreapp3.1\Razor\Views\Home\Page1.cshtml.g.cs
+C:\Users\april\Source\Repos\a-sellman\IT2030Sellman\7-1\7-1\obj\Debug\netcoreapp3.1\Razor\Views\Home\Page2.cshtml.g.cs
+C:\Users\april\Source\Repos\a-sellman\IT2030Sellman\7-1\7-1\obj\Debug\netcoreapp3.1\Razor\Views\Home\Page3.cshtml.g.cs

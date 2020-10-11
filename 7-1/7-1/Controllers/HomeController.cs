@@ -18,7 +18,41 @@ namespace _7_1.Controllers
             _logger = logger;
         }
 
+        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
+        public IActionResult Error()
+        {
+            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+        }
+
         public IActionResult Index()
+        {
+            return View();
+        }
+
+        [HttpGet]
+        public ActionResult Index(int id, string role)
+
+        {
+            return View();
+        }
+
+        [HttpGet]
+        public ActionResult Page1(int id, string role)
+
+        {
+            return View();
+        }
+
+        [HttpGet]
+        public ActionResult Page2(int id, string role)
+
+        {
+            return View();
+        }
+
+        [HttpGet]
+        public ActionResult Page3(int id, string role)
+
         {
             return View();
         }
@@ -26,12 +60,6 @@ namespace _7_1.Controllers
         public IActionResult Privacy()
         {
             return View();
-        }
-
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
-        {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
     }
 }
