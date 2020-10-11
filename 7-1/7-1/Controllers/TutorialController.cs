@@ -23,9 +23,22 @@ namespace _7_1.Controllers
             return View("Page1"); //Views/Tutorial/Page1.cshtml
         }
 
-        public IActionResult Privacy()
+        public IActionResult Page1(string id = "All")
         {
-            return View();
+            ViewBag.Category = id;
+            return View(); //Views/Tutorial/Page1
+        }
+
+        public IActionResult Page2(string id)
+        {
+            ViewBag.ProductSlug = id;
+            return View(); //Views/Tutorial/Page2
+        }
+
+        public IActionResult Page3(string id)
+        {
+            ViewBag.ProductSlug = id;
+            return View(); //Views/Tutorial/Page3
         }
     }
 }
