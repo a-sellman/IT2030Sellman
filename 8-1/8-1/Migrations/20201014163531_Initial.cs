@@ -22,7 +22,10 @@ namespace _8_1.Migrations
                     StartDate = table.Column<int>(nullable: false),
                     AccomodationName = table.Column<string>(nullable: false),
                     AccomodationEmail = table.Column<string>(nullable: false),
-                    AccomdationPhone = table.Column<string>(nullable: false)
+                    AccomdationPhone = table.Column<string>(nullable: false),
+                    ThingToDo1 = table.Column<string>(nullable: false),
+                    ThingToDo2 = table.Column<string>(nullable: false),
+                    ThingToDo3 = table.Column<string>(nullable: false)
                 },
                 constraints: table =>
                 {

@@ -38,6 +38,15 @@ namespace _8_1.Migrations
                     b.Property<int>("StartDate")
                         .HasColumnType("int");
 
+                    b.Property<string>("ThingToDo1")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ThingToDo2")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ThingToDo3")
+                        .HasColumnType("nvarchar(max)");
+
                     b.HasKey("TripID");
 
                     b.ToTable("Destination");

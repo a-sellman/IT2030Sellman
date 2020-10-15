@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.Diagnostics.Contracts;
 
 namespace _8_1.Models
 {
@@ -15,6 +16,10 @@ namespace _8_1.Models
 
         [Required(ErrorMessage = "Please Enter A Start Date")]
         public int StartDate { get; set; }
+
+        public string ThingToDo1 { get; set; }
+        public string ThingToDo2 { get; set; }
+        public string ThingToDo3 { get; set; }
 
         [Required(ErrorMessage = "Please Enter A Destination.")]
         [Key]

@@ -9,7 +9,7 @@ using _8_1.Models;
 namespace _8_1.Migrations
 {
     [DbContext(typeof(DestinationContext))]
-    [Migration("20201015223741_Init")]
+    [Migration("20201015225318_Init")]
     partial class Init
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -39,6 +39,15 @@ namespace _8_1.Migrations
 
                     b.Property<int>("StartDate")
                         .HasColumnType("int");
+
+                    b.Property<string>("ThingToDo1")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ThingToDo2")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ThingToDo3")
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("TripID");
 
