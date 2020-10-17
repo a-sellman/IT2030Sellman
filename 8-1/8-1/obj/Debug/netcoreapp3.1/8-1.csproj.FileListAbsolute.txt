@@ -86,7 +86,6 @@ C:\Users\april\Source\Repos\a-sellman\IT2030Sellman\8-1\8-1\bin\Debug\netcoreapp
 C:\Users\april\Source\Repos\a-sellman\IT2030Sellman\8-1\8-1\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
 C:\Users\april\Source\Repos\a-sellman\IT2030Sellman\8-1\8-1\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
 C:\Users\april\Source\Repos\a-sellman\IT2030Sellman\8-1\8-1\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
-C:\Users\april\Source\Repos\a-sellman\IT2030Sellman\8-1\8-1\obj\Debug\netcoreapp3.1\8-1.csprojAssemblyReference.cache
 C:\Users\april\Source\Repos\a-sellman\IT2030Sellman\8-1\8-1\obj\Debug\netcoreapp3.1\8-1.AssemblyInfoInputs.cache
 C:\Users\april\Source\Repos\a-sellman\IT2030Sellman\8-1\8-1\obj\Debug\netcoreapp3.1\8-1.AssemblyInfo.cs
 C:\Users\april\Source\Repos\a-sellman\IT2030Sellman\8-1\8-1\obj\Debug\netcoreapp3.1\8-1.csproj.CoreCompileInputs.cache
@@ -97,9 +96,7 @@ C:\Users\april\Source\Repos\a-sellman\IT2030Sellman\8-1\8-1\obj\Debug\netcoreapp
 C:\Users\april\Source\Repos\a-sellman\IT2030Sellman\8-1\8-1\obj\Debug\netcoreapp3.1\8-1.TagHelpers.output.cache
 C:\Users\april\Source\Repos\a-sellman\IT2030Sellman\8-1\8-1\obj\Debug\netcoreapp3.1\8-1.RazorCoreGenerate.cache
 C:\Users\april\Source\Repos\a-sellman\IT2030Sellman\8-1\8-1\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
-C:\Users\april\Source\Repos\a-sellman\IT2030Sellman\8-1\8-1\obj\Debug\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
 C:\Users\april\Source\Repos\a-sellman\IT2030Sellman\8-1\8-1\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
-C:\Users\april\Source\Repos\a-sellman\IT2030Sellman\8-1\8-1\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
 C:\Users\april\Source\Repos\a-sellman\IT2030Sellman\8-1\8-1\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
 C:\Users\april\Source\Repos\a-sellman\IT2030Sellman\8-1\8-1\obj\Debug\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs
 C:\Users\april\Source\Repos\a-sellman\IT2030Sellman\8-1\8-1\obj\Debug\netcoreapp3.1\Razor\Views\_ViewStart.cshtml.g.cs
@@ -112,3 +109,4 @@ C:\Users\april\Source\Repos\a-sellman\IT2030Sellman\8-1\8-1\obj\Debug\netcoreapp
 C:\Users\april\Source\Repos\a-sellman\IT2030Sellman\8-1\8-1\obj\Debug\netcoreapp3.1\8-1.dll
 C:\Users\april\Source\Repos\a-sellman\IT2030Sellman\8-1\8-1\obj\Debug\netcoreapp3.1\8-1.pdb
 C:\Users\april\Source\Repos\a-sellman\IT2030Sellman\8-1\8-1\obj\Debug\netcoreapp3.1\8-1.genruntimeconfig.cache
+C:\Users\april\Source\Repos\a-sellman\IT2030Sellman\8-1\8-1\obj\Debug\netcoreapp3.1\8-1.csprojAssemblyReference.cache
