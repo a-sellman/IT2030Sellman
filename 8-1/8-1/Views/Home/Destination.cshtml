@@ -1,0 +1,55 @@
+﻿@{
+
+}
+
+<style>
+    .stylish {
+        font-size: 30px;
+        margin-top: 25px;
+        margin-right: 25px;
+        margin-left: 25px;
+        margin-bottom: 25px;
+    }
+
+    h1 {
+        margin-top: 25px;
+        margin-bottom: 25px;
+        color: white;
+        background-color: darkgray;
+        align-content: center;
+        font-size: 40px;
+    }
+
+    button {
+        font-size: 25px;
+        color: black;
+    }
+</style>
+<head>
+    <meta charset="utf-8" />
+</head>
+<body>
+    <h1 class="jumbotron col-sm-8 col-md-10 col-lg-12"> Add A Destination </h1>
+
+    <div class="stylish">
+
+        <p>
+            <label for="Destination">Destination:</label>
+            <input type="text" name="tripid" />
+        </p>
+        <p>
+            <label for="Accomodation">Accomodation:</label>
+            <input type="text" name="accomodation" />
+        </p>
+        <p>
+            <label for="startdate">Start Date:</label>
+            <input type="text" name="startdate" />
+        </p>
+
+        <p>
+            <label for="enddate">End Date:</label>
+            <input type="text" name="enddate" />
+        </p>
+    </div>
+    <button>@Html.ActionLink("Next", "Accomodations")</button>
+</body>

@@ -14,6 +14,20 @@ namespace _8_1.Controllers
             _logger = logger;
         }
 
+        [HttpGet]
+        public ActionResult Accomodations(int id, string role)
+
+        {
+            return View();
+        }
+
+        [HttpGet]
+        public ActionResult Destination(int id, string role)
+
+        {
+            return View();
+        }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
@@ -26,6 +40,13 @@ namespace _8_1.Controllers
         }
 
         public IActionResult Privacy()
+        {
+            return View();
+        }
+
+        [HttpGet]
+        public ActionResult ThingsToDo(int id, string role)
+
         {
             return View();
         }
