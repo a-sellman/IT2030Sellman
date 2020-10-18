@@ -4,35 +4,44 @@
 @{
 }
 <style>
-    h1 {
+    .stylish {
+        font-size: 30px;
+        margin-top: 25px;
+        margin-right: 25px;
+        margin-left: 25px;
+        margin-bottom: 25px;
+    }
+
+    .jumbotron {
         margin-top: 25px;
         margin-bottom: 25px;
         color: white;
         background-color: darkgray;
         text-align: center;
-        font-size: 20px;
+        font-size: 50px;
     }
 
     button {
         font-size: 25px;
         color: black;
+        align-content: center;
     }
 </style>
-<h1 class="jumbotron col-sm-8 col-md-10 col-lg-12"> Accomodations </h1>
+<div class="jumbotron col-sm-8 col-md-10 col-lg-12"> Accomodation Information</div>
 
 <div class="stylish">
 
     <p>
         <label for="AccomodationName">Name:</label>
-        <input type="text" name="name" />
+        <input type="text" id="AccomodationName" name="name" />
     </p>
     <p>
         <label for="AccomodationEmail">Email:</label>
-        <input type="text" name="email" />
+        <input type="text" id="AccomodationEmail" name="email" />
     </p>
     <p>
         <label for="AccomodationPhone">Phone Number:</label>
-        <input type="text" name="startdate" />
+        <input type="text" id="AccomodationPhone" name="phone" />
     </p>
 </div>
 

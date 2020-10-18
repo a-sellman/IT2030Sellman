@@ -3,22 +3,24 @@
 }
 
 <style>
-    h1 {
+
+    .jumbotron {
         margin-top: 25px;
         margin-bottom: 25px;
         color: white;
         background-color: darkgray;
-        align-content: center;
-        font-size: 40px;
+        text-align: center;
+        font-size: 50px;
     }
 
     button {
         font-size: 25px;
         color: black;
+        align-content: center;
     }
 </style>
 
-<h1 class="jumbotron col-sm-8 col-md-10 col-lg-12"> Add Trip </h1>
+<div class="jumbotron col-sm-8 col-md-10 col-lg-12"> Add Trip </div>
 
 <button>@Html.ActionLink("Add New Trip", "Destination")</button>
 

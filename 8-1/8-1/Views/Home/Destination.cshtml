@@ -1,5 +1,4 @@
 ﻿@{
-
 }
 
 <style>
@@ -11,45 +10,48 @@
         margin-bottom: 25px;
     }
 
-    h1 {
+    .jumbotron {
         margin-top: 25px;
         margin-bottom: 25px;
         color: white;
         background-color: darkgray;
-        align-content: center;
-        font-size: 40px;
+        text-align: center;
+        font-size: 50px;
     }
 
     button {
         font-size: 25px;
         color: black;
+        align-content: center;
     }
 </style>
 <head>
     <meta charset="utf-8" />
 </head>
 <body>
-    <h1 class="jumbotron col-sm-8 col-md-10 col-lg-12"> Add A Destination </h1>
+    <div class="jumbotron col-sm-8 col-md-10 col-lg-12"> Trip Information </div>
 
     <div class="stylish">
 
         <p>
             <label for="Destination">Destination:</label>
-            <input type="text" name="tripid" />
+            <input type="text" id="TripId" name="TripId" />
         </p>
         <p>
             <label for="Accomodation">Accomodation:</label>
-            <input type="text" name="accomodation" />
+            <input type="text" id="AccomodationName" name="AccomodationName" />
         </p>
         <p>
             <label for="startdate">Start Date:</label>
-            <input type="text" name="startdate" />
+            <input type="text" id="StartDate" name="startdate" />
         </p>
 
         <p>
             <label for="enddate">End Date:</label>
-            <input type="text" name="enddate" />
+            <input type="text" id="EndDate" name="enddate" />
         </p>
     </div>
+    <asp:Button ID="Button1" runat="server" Text="Save Your Trip"
+                OnClick="Button1_Click" />
     <button>@Html.ActionLink("Next", "Accomodations")</button>
 </body>
