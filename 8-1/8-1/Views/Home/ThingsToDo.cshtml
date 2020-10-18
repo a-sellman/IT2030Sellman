@@ -9,29 +9,45 @@
         margin-top: 25px;
         margin-bottom: 25px;
         color: white;
-        background-color: darkgray;
+        background-color: gray;
         text-align: center;
         font-size: 50px;
+    }
+
+    .stylish {
+        font-size: 30px;
+        margin-top: 25px;
+        margin-right: 25px;
+        margin-left: 25px;
+        margin-bottom: 25px;
     }
 
     button {
         font-size: 25px;
         color: black;
     }
+
+    h3 {
+        margin-top: 25px;
+        align-content: center
+    }
 </style>
-<div class="jumbotron col-sm-8 col-md-10 col-lg-12"> Things To Do </div>
 
-<p>
-    <label for="ThingToDo1">Thing To Do:</label>
-    <input type="text" name="thingtodo1" />
-</p>
-<p>
-    <label for="ThingToDo2">Thing To Do:</label>
-    <input type="text" name="thingtodo2" />
-</p>
-<p>
-    <label for="ThingToDo3">Start Date:</label>
-    <input type="text" name="thingtodo3" />
-</p>
+<div class="jumbotron col-sm-8 col-md-10 col-lg-12"> Trip Log</div>
+<div class="stylish">
 
+    <h3> Places To See </h3>
+    <p>
+        <label for="ThingToDo1">Thing To Do:</label>
+        <input type="text" name="thingtodo1" />
+    </p>
+    <p>
+        <label for="ThingToDo2">Thing To Do:</label>
+        <input type="text" name="thingtodo2" />
+    </p>
+    <p>
+        <label for="ThingToDo3">Thing To Do:</label>
+        <input type="text" name="thingtodo3" />
+    </p>
+</div>
 <button>@Html.ActionLink("Submit Trip", "Index")</button>
