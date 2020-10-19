@@ -3,7 +3,7 @@
 *@
 @{
 }
-
+@model Destination
 <style>
     .jumbotron {
         margin-top: 25px;
@@ -34,9 +34,15 @@
 </style>
 
 <div class="jumbotron col-sm-8 col-md-10 col-lg-12"> Trip Log</div>
-<div class="stylish">
+<h3> Places To See </h3>
+<form class="stylish" runat="server" name="ThingsToDo" method="post">
+    <input type="hidden" id="TripId" name="TripId" value="@Model.TripID" />
+    <input type="hidden" id="AccomodationName" value="@Model.AccomodationName" name="AccomodationName" />
+    <input type="hidden" id="StartDate" value="@Model.StartDate" name="startdate" />
+    <input type="hidden" id="EndDate" value="@Model.EndDate" name="enddate" />
+    <input type="hidden" value="@Model.AccomodationEmail" id="AccomodationEmail" name="email" />
+    <input type="hidden" value="@Model.AccomodationPhone" id="AccomodationPhone" name="phone" />
 
-    <h3> Places To See </h3>
     <p>
         <label for="ThingToDo1">Thing To Do:</label>
         <input type="text" name="thingtodo1" />
@@ -49,5 +55,5 @@
         <label for="ThingToDo3">Thing To Do:</label>
         <input type="text" name="thingtodo3" />
     </p>
-</div>
-<button>@Html.ActionLink("Submit Trip", "Index")</button>
+    <input type="submit" runat="server" value="Submit Your Trip" id="StartNewTrip" alt="StartNewTrip">
+</form>

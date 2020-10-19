@@ -3,6 +3,7 @@
 *@
 @{
 }
+@model Destination
 <style>
     .stylish {
         font-size: 30px;
@@ -34,21 +35,23 @@
 </style>
 <div class="jumbotron col-sm-8 col-md-10 col-lg-12">Trip Log</div>
 
-<div class="stylish">
-    <h3> Accomodation Information</h3>
-
+<h3> Accomodation Information</h3>
+<form class="stylish" runat="server" name="Accomodations" method="post">
+    <input type="hidden" id="TripId" value="@Model.TripID" name="TripId" />
+    <input type="hidden" value="@Model.AccomodationName" id="AccomodationName" name="AccomodationName" />
+    <input type="hidden" value="@Model.StartDate" id="StartDate" name="startdate" />
+    <input type="hidden" value="@Model.EndDate" id="EndDate" name="enddate" />
     <p>
         <label for="AccomodationName">Name:</label>
-        <input type="text" id="AccomodationName" name="name" />
+        <input type="text" value="AccomodationName" id="AccomodationName" name="name" />
     </p>
     <p>
         <label for="AccomodationEmail">Email:</label>
-        <input type="text" id="AccomodationEmail" name="email" />
+        <input type="text" value="AccomodationEmail" id="AccomodationEmail" name="email" />
     </p>
     <p>
         <label for="AccomodationPhone">Phone Number:</label>
-        <input type="text" id="AccomodationPhone" name="phone" />
+        <input type="text" value="AccomodationPhone" id="AccomodationPhone" name="phone" />
     </p>
-</div>
-
-<button>@Html.ActionLink("Next", "ThingsToDo")</button>
+    <input type="submit" runat="server" value="Next" id="StartNewTrip" alt="StartNewTrip">
+</form>

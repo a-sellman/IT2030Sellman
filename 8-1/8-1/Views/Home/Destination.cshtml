@@ -1,6 +1,6 @@
 ﻿@{
 }
-
+@model Destination
 <style>
     .stylish {
         font-size: 30px;
@@ -31,8 +31,7 @@
 <body>
     <div class="jumbotron col-sm-8 col-md-10 col-lg-12"> Trip Log </div>
 
-    <div class="stylish">
-
+    <form class="stylish" runat="server" name="Destination" method="post">
         <p>
             <label for="Destination">Destination:</label>
             <input type="text" id="TripId" name="TripId" />
@@ -43,15 +42,13 @@
         </p>
         <p>
             <label for="startdate">Start Date:</label>
-            <input type="text" id="StartDate" name="startdate" />
+            <input type="date" id="StartDate" name="startdate" />
         </p>
 
         <p>
             <label for="enddate">End Date:</label>
-            <input type="text" id="EndDate" name="enddate" />
+            <input type="date" id="EndDate" name="enddate" />
         </p>
-    </div>
-    <asp:Button ID="Button1" runat="server" Text="Save Your Trip"
-                OnClick="Button1_Click" />
-    <button>@Html.ActionLink("Next", "Accomodations")</button>
+        <input type="submit" runat="server" value="Submit" id="StartNewTrip" alt="StartNewTrip">
+    </form>
 </body>
