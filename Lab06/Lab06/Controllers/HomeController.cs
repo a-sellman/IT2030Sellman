@@ -15,6 +15,10 @@ namespace Lab06.Controllers
 
         private FaqsContext context { get; set; }
 
+        [Route("topic/{topic}/category/{category}")]
+        [Route("topic/{topic}")]
+        [Route("category/{category}")]
+        [Route("/")]
         public IActionResult Index(string topic, string category)
         {
             ViewBag.Topics = context.Topics.OrderBy(t => t.Name).ToList();
