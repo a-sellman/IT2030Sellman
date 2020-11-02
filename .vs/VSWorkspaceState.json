@@ -1,11 +1,12 @@
 {
   "ExpandedNodes": [
     "",
-    "\\3-1",
     "\\3-1\\3-1",
     "\\3-1\\3-1\\Controllers",
+    "\\5-1",
+    "\\5-1\\5-1_TipCalculator",
     "\\8-1"
   ],
-  "SelectedNode": "\\3-1\\3-1\\Controllers\\HomeController.cs",
+  "SelectedNode": "\\5-1\\5-1_TipCalculator\\5-1_TipCalculator.sln",
   "PreviewInSolutionExplorer": false
 }
