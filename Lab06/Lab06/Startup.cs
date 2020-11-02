@@ -45,6 +45,18 @@ namespace Lab06
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute(
+                 name: "both",
+                 pattern: "{controller=Home}/{action=Index}/topic/{topic}/category/{category}");
+
+                endpoints.MapControllerRoute(
+                   name: "topic",
+                   pattern: "{controller=Home}/{action=Index}/topic/{topic}");
+
+                endpoints.MapControllerRoute(
+                  name: "category",
+                  pattern: "{controller=Home}/{action=Index}/topic/{category}");
+
+                endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
             });
@@ -53,6 +65,12 @@ namespace Lab06
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddRouting(options =>
+           {
+               options.LowercaseUrls = true;
+               options.AppendTrailingSlash = true;
+           });
+
             services.AddControllersWithViews();
 
             services.AddDbContext<FaqsContext>(options =>
