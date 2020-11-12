@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Lab07.Areas.Help.Controllers
 {
+    [Area("Help")]
     public class TutorialController : Controller
     {
         public IActionResult Index(string id)
