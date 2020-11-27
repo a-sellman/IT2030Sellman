@@ -2,12 +2,13 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Lab10.Models;
 
 namespace Lab10.Models
 {
-    public class TicTacTBoard
+    public class TicTacToeBoard
     {
-        public TicTacTBoard()
+        public TicTacToeBoard()
         {
             string[] rows = new string[] { "Top", "Middle", "Bottom" };
             string[] cols = new string[] { "Left", "Middle", "Right" };
