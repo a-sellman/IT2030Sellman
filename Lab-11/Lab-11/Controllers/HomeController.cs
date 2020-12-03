@@ -32,7 +32,7 @@ namespace Lab_11.Controllers
             SalesListViewModel vs = new SalesListViewModel
             {
                 Sales = query.ToList(),
-                Employees = context.Employee.OrderBy(e => e.LastName).ToList(),
+                Employee = context.Employee.OrderBy(e => e.LastName).ToList(),
                 EmployeeId = id
             };
 
