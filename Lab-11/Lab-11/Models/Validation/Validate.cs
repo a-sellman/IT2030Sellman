@@ -35,7 +35,17 @@ namespace Lab_11.Models.Validation
 
         public static string CheckSales(SalesContext context, Sales sale)
         {
-            throw new NotFiniteNumberException();
+            Sales sales = context.Sales.FirstOrDefault(
+                s => s.EmployeeId == sale.EmployeeId
+                && s.Year == sale.Year
+                && s.Quarter == sale.Quarter);
+
+            if (sales == null)
+            {
+                return string.Empty;
+            }
+            Employee employee = context.Employee.Find(sale.EmployeeId);
+            return $"Sales for {employee.FullName} for {sale.Year}and{sale.Quarter} already exist.";
         }
     }
 }
