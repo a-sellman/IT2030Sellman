@@ -9,14 +9,12 @@ namespace Lab_12.Models
 {
     public class Trip
     {
-        public string Accomodation { get; set; }
+        public int? Accomodation { get; set; }
+        public Accomodation Accomodation { get; set; }
+        public Destination Destination { get; set; }
 
-        public string AccomodationEmail { get; set; }
-
-        public string AccomodationPhone { get; set; }
-
-        [Required(ErrorMessage = "Please enter a destination")]
-        public string Destination { get; set; }
+        [Range(1, 999999999, ErrorMessage = "Please enter a destination")]
+        public int DestinationId { get; set; }
 
         [Required(ErrorMessage = "Please enter an end date")]
         public DateTime? EndDate { get; set; }
@@ -24,12 +22,7 @@ namespace Lab_12.Models
         [Required(ErrorMessage = "Please enter a start date")]
         public DateTime? StartDate { get; set; }
 
-        public string ThingToDo1 { get; set; }
-
-        public string ThingToDo2 { get; set; }
-
-        public string ThingToDo3 { get; set; }
-
+        public ICollection<TripActivity> TripActivities { get; set; }
         public int TripId { get; set; }
     }
 }
