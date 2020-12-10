@@ -11,27 +11,14 @@ namespace Lab_12.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
+        public HomeController(TripLogContext context) => this.context = context;
 
-        public HomeController(ILogger<HomeController> logger)
-        {
-            _logger = logger;
-        }
+        private TripLogContext context { get; set; }
 
-        public IActionResult Index()
+        public ViewResult Index()
         {
-            return View();
-        }
-
-        public IActionResult Privacy()
-        {
-            return View();
-        }
-
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
-        {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+            List<Trip> trips = context.Trips.OrderBy(t => t.StartDate).ToList();
+            return View(trips);
         }
     }
 }
