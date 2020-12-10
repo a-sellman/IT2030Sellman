@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
+using Lab_12.Models;
 
 namespace Lab_12.Models
 {
@@ -47,9 +48,13 @@ namespace Lab_12.Models
                 query = query.Include(include);
             }
             if (options.HasWhere)
+            {
                 query = query.Where(options.Where);
+            }
             if (options.HasOrderBy)
+            {
                 query = query.OrderBy(options.OrderBy);
+            }
             return query;
         }
     }

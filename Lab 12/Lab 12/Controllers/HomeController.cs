@@ -11,13 +11,18 @@ namespace Lab_12.Controllers
 {
     public class HomeController : Controller
     {
-        public HomeController(TripLogContext context) => this.context = context;
+        public HomeController(TripLogContext context) => data = new Repository<Trip>(context);
 
-        private TripLogContext context { get; set; }
+        private Repository<Trip> data { get; set; }
 
         public ViewResult Index()
         {
-            List<Trip> trips = context.Trips.OrderBy(t => t.StartDate).ToList();
+            var options = new QueryOptions<Trip>
+            {
+                Includes = "Destination, Accomodation, TripActivities.Activity",
+                OrderBy = t => t.StartDate
+            };
+            var trips = data.List(options);
             return View(trips);
         }
     }

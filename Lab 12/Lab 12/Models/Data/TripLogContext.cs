@@ -14,6 +14,15 @@ namespace Lab_12.Models
         {
         }
 
+        public DbSet<Accomodation> Accomodations { get; set; }
+        public DbSet<Activity> Activities { get; set; }
+        public DbSet<Destination> Destinations { get; set; }
         public DbSet<Trip> Trips { get; set; }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.ApplyConfiguration(new TripConfig());
+            modelBuilder.ApplyConfiguration(new TripActivityConfig());
+        }
     }
 }

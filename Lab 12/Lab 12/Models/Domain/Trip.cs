@@ -9,7 +9,6 @@ namespace Lab_12.Models
 {
     public class Trip
     {
-        public int? Accomodation { get; set; }
         public Accomodation Accomodation { get; set; }
         public Destination Destination { get; set; }
 
