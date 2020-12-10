@@ -78,7 +78,7 @@ namespace Lab_12.Controllers
 
                     if (vm.Trip.AccomodationId > 0)
                     {
-                        TempData[nameof(Trip.AccomodationId)] vm.Trip.AccomodationId];
+                        TempData[nameof(Trip.AccomodationId) vm.Trip.AccomodationId];
                     }
                     return RedirectToAction("Add", new { id = "Page2" });
 

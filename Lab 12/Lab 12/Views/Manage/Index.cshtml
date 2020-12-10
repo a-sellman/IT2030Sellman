@@ -1,0 +1,104 @@
+﻿@model ManageViewModel
+@{
+    ViewBag.Title = "Manage Destinations, Accomodations and Activities";
+    ViewBag.Subheader = ViewBag.Title;
+}
+<div class="row">
+
+    <div class="col">
+        <fieldset class="form-control">
+            <legend>Add</legend>
+            @* left side*@
+            <form asp-action="Add" method="post">
+
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        <div class="form-group">
+                            <label asp-for="Destination.Name">Destination</label>
+                            <input asp-for="Destination.Name" class="form-control">
+                        </div>
+                    </li>
+
+                    <li class="list-group-item">
+                        <div class="form-group">
+                            <label asp-for="Accomodation.Name">Accomodation</label>
+                            <input asp-for="Accomodation.Name" class="form-control">
+                        </div>
+                    </li>
+
+                    <li class="list-group-item">
+                        <div class="form-group">
+                            <label asp-for="Accomodation.Phone">Phone</label>
+                            <input asp-for="Accomodation.Phone" class="form-control">
+                        </div>
+                    </li>
+
+                    <li class="list-group-item">
+                        <div class="form-group">
+                            <label asp-for="Accomodation.Phone">Phone</label>
+                            <input asp-for="Accomodation.Phone" class="form-control">
+                        </div>
+                    </li>
+
+                    <li class="list-group-item">
+                        <div class="form-group">
+                            <label asp-for="Accomodation.Email">Email</label>
+                            <input asp-for="Accomodation.Email" class="form-control">
+                        </div>
+                    </li>
+
+                    <li class="list-group-item">
+                        <div class="form-group">
+                            <label asp-for="Activity.Name">Activity</label>
+                            <input asp-for="Activity.Name" class="form-control"></input>
+                        </div>
+                    </li>
+                </ul>
+
+                <button type="submit" class="btn btn-primary mt-2">Add</button>
+            </form>
+        </fieldset>
+    </div>
+
+    @* right side*@
+    <div class="col">
+        <fieldset class="form-group">
+            <legend>Delete</legend>
+            <form asp-action="Delete" method="post">
+
+                <ul class="list-group>
+                    <li class="list-group-item">
+                        <div class="form-group">
+                            <label asp-for="Destination.DestinationId">Destination</label>
+                            <select asp-for="Destination.DestinationId" class="form-control"
+                                    asp-items="@(new SelectList(Model.Destinations, "DestinationID, Name"))">
+                                <option></option>
+                            </select>
+                        </div>
+                    </li>
+
+                    <li class="list-group-item">
+                        <div class="form-group">
+                            <label asp-for="Accomodation.AccomodationId">Destination</label>
+                            <select asp-for="Destination.DestinationId" class="form-control"
+                                    asp-items="@(new SelectList(Model.Accomodations, "DestinationID, Name"))">
+                                <option></option>
+                            </select>
+                        </div>
+                    </li>
+
+                    <li class="list-group-item">
+                        <div class="form-group">
+                            <label asp-for="Activity.ActivityId">Destination</label>
+                            <select asp-for="Activity.ActivityId" class="form-control"
+                                    asp-items="@(new SelectList(Model.Activities, "DestinationID, Name"))">
+                                <option></option>
+                            </select>
+                        </div>
+                    </li>
+                </ul>
+                <button type="submit" class="btn btn-primary mt-2">Delete</button>
+            </form>
+        </fieldset>
+    </div>
+</div>
