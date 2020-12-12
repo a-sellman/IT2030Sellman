@@ -12,7 +12,7 @@ namespace Lab13.Controllers
     {
         public ValidationController(SalesContext ctx) => context = ctx;
 
-        private SalesContext context { get; set; }
+        private UnitOfWork data { get; set; }
 
         public JsonResult CheckEmployee(string firstName, string lastName, DateTime dateofBirth)
         {
@@ -22,7 +22,7 @@ namespace Lab13.Controllers
                 LastName = lastName,
                 DateOfBirth = dateofBirth
             };
-            string message = Validate.CheckEmployee(context, employee);
+            string message = Validate.CheckEmployee(data.Employees, employee);
             if (string.IsNullOrEmpty(message))
             {
                 return Json(true);
@@ -39,7 +39,7 @@ namespace Lab13.Controllers
                 DateOfBirth = dateofBirth,
                 ManagerId = managerId
             };
-            string message = Validate.CheckManagerEmployeeMatch(context, employee);
+            string message = Validate.CheckManagerEmployeeMatch(data.Employees, employee);
             if (string.IsNullOrEmpty(message))
             {
                 return Json(true);

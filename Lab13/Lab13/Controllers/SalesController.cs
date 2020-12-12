@@ -31,13 +31,13 @@ namespace Lab13.Controllers
 
             if (ModelState.IsValid)
             {
-                context.Sales.Add(sales);
-                context.SaveChanges();
+                data.Sales.Insert(sales);
+                data.Save();
                 return RedirectToAction("Index", "Home");
             }
             else
             {
-                ViewBag.Employee = context.Employee.OrderBy(e => e.LastName).ToList();
+                ViewBag.Employee = data.Employees.List(new QueryOptions<Employee> { OrderBy = e => e.FirstName });
                 return View();
             }
         }
