@@ -78,7 +78,7 @@ namespace Lab13.Models
                 && current.SortDirection == "asc";
             {
                 this[nameof(GridDTO.SortDirection)] = "desc";
-            }
+            });
             else
             {
                 this[nameof(GridDTO.SortDirection)] = "asc";
