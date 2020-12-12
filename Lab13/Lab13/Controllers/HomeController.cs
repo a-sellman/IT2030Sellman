@@ -6,32 +6,52 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Lab13.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace Lab13.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
+        public HomeController(SalesContext ctx) => context = ctx;
 
-        public HomeController(ILogger<HomeController> logger)
-        {
-            _logger = logger;
-        }
+        private SalesContext context { get; set; }
 
-        public IActionResult Index()
+        [HttpGet]
+        public ViewResult Index(int id)
         {
+            IQueryable<Sales> query = context.Sales
+                .Include(s => s.Employee)
+                .OrderBy(s => s.Employee.LastName)
+                .ThenBy(s => s.Employee.FirstName)
+                .ThenBy(s => s.Year)
+                .ThenBy(s => s.Quarter);
+
+            if (id > 0)
+            {
+                query = query.Where(s => s.EmployeeId == id);
+            }
+
+            SalesListViewModel vs = new SalesListViewModel
+            {
+                Sales = query.ToList(),
+                Employee = context.Employee.OrderBy(e => e.LastName).ToList(),
+                EmployeeId = id
+            };
+
             return View();
         }
 
-        public IActionResult Privacy()
+        [HttpPost]
+        public RedirectToActionResult Index(Employee employee)
         {
-            return View();
-        }
-
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
-        {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+            if (employee.EmployeeId > 0)
+            {
+                return RedirectToAction("Index", new { id = employee.EmployeeId });
+            }
+            else
+            {
+                return RedirectToAction("Index", new { id = string.Empty });
+            }
         }
     }
 }
