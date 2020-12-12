@@ -57,7 +57,7 @@ namespace Lab14
                 Configuration.GetConnectionString("ContactContext")));
 
             services.AddTransient<IUnitOfWork, UnitOfWork>();
-            services.AddTransient(< typeof(IRepository<>), typeof(Repository<>));
+            services.AddTransient(typeof(IRepository), typeof(Repository<>));
         }
     }
 }
