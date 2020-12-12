@@ -5,9 +5,12 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+
+using Lab14.Models;
 
 namespace Lab14
 {
@@ -52,5 +55,9 @@ namespace Lab14
             services.AddDbContext<ContactContext>(options =>
             options.UseSqlServer(
                 Configuration.GetConnectionString("ContactContext")));
+
+            services.AddTransient<IUnitOfWork, UnitOfWork>();
+            services.AddTransient(< typeof(IRepository<>), typeof(Repository<>));
         }
     }
+}

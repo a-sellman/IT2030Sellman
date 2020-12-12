@@ -13,6 +13,8 @@ namespace Lab14.Models
         [Required(ErrorMessage = "Please enter an email.")]
         public int CategoryID { get; set; }
 
+        public int ContactId { get; set; }
+
         [Required(ErrorMessage = "Please enter a phone number.")]
         public string Email { get; set; }
 

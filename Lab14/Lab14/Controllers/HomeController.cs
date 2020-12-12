@@ -1,28 +1,24 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
 using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
-using Microsoft.EntityFrameworkCore;
 using Lab14.Models;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace Lab14.Controllers
 {
     public class HomeController : Controller
     {
-        public HomeController(ContactController ctx)
-        {
-            context = ctx;
-        }
-
-        private ContactController context { get; set; }
+        private Repository<Contact> data { get; set; }
 
         public IActionResult Index()
         {
-            //        var contacts = context.Contacts.OrderBy(m => m.CategoryID).ToList();
-            var contacts = context.Contacts.ToList();
+            var options = new QueryOptions<Contact>
+            {
+                Includes = "Category",
+                OrderBy = c => c.FName
+            };
+            var contacts = data.List(options);
             return View(contacts);
         }
-    } 
+    }
+}
