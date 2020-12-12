@@ -46,6 +46,12 @@ namespace Lab13
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute(
+                    name: "pagessortfilter",
+                    pattern: "{controller={Home}/{action=Index}/page/{pagenumber}/size/{pagesize}/sort/{sortfield}/{sortdirection/filterby/employee-{employee}/year-{year}/qtr-{quarter}"
+
+                    );
+
+                endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
             });
@@ -54,6 +60,11 @@ namespace Lab13
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddRouting(options =>
+            {
+                options.LowercaseUrls = true;
+                options.AppendTrailingSlash = true;
+            });
             services.AddMemoryCache();
             services.AddSession();
             services.AddControllersWithViews();

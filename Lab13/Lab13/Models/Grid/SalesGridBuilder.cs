@@ -23,8 +23,14 @@ namespace Lab13.Models
 
         public void LoadFilterSegments(string[] filter, Employee employee)
         {
-            routes.EmployeeFilter = filter[0];
-
+            if (employee == null)
+            {
+                routes.EmployeeFilter = filter[0];
+            }
+            else
+            {
+                routes.EmployeeFilter = filter[0] + "-" + employee.FullName.Slug();
+            }
             routes.YearFilter = filter[1];
             routes.QuarterFilter = filter[2];
         }

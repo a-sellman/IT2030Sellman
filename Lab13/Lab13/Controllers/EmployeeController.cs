@@ -10,38 +10,38 @@ namespace Lab13.Controllers
 {
     public class EmployeeController : Controller
     {
-        public EmployeeController(SalesContext ctx) => context = ctx;
+        public EmployeeController(SalesContext ctx) => this.data = new Repository<Employee>(ctx);
 
-        private SalesContext context { get; set; }
+        private Repository<Employee> data { get; set; }
 
         [HttpGet]
         public ViewResult Add()
         {
-            ViewBag.Employee = context.Employee.OrderBy(e => e.LastName).ToList();
-            return View();
+            ViewBag.Employees = data.List(new QueryOptions<Employee> { OrderBy = e.FirstName });
         }
 
         public IActionResult Add(Employee employee)
         {
-            string message = Validate.CheckEmployee(context, employee);
+            string message = Validate.CheckEmployee(data, employee);
             if (!string.IsNullOrEmpty(message))
             {
                 ModelState.AddModelError(nameof(Employee.DateOfBirth), message);
             }
-            message = Validate.CheckManagerEmployeeMatch(context, employee);
+            message = Validate.CheckManagerEmployeeMatch(data, employee);
             if (!string.IsNullOrEmpty(message))
             {
                 ModelState.AddModelError(nameof(Employee.ManagerId), message);
             }
             if (ModelState.IsValid)
+
             {
-                context.Employee.Add(employee);
-                context.SaveChanges();
+                data.Insert(employee);
+                data.Save();
                 return RedirectToAction("Index", "Home");
             }
             else
             {
-                ViewBag.Employee = context.Employee.OrderBy(e => e.LastName).ToList();
+                ViewBag.Employee = data.List(new QueryOptions<Employee> { OrderBy = e => e.FirstName).ToList();
                 return View();
             }
         }

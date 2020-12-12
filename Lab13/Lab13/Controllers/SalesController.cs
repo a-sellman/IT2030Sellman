@@ -10,14 +10,14 @@ namespace Lab13.Controllers
 {
     public class SalesController : Controller
     {
-        public SalesController(SalesContext ctx) => context = ctx;
+        public SalesController(SalesContext ctx) => this.data = new UnitOfWork(ctx);
 
-        public SalesContext context { get; set; }
+        public UnitOfWork data { get; set; }
 
         [HttpGet]
         public ViewResult Add()
         {
-            ViewBag.Employee = context.Employee.OrderBy(e => e.LastName);
+            ViewBag.Employee = data.Employees.List(new QueryOptions<Employee> { OrderBy = e => e.FirstName });
             return View();
         }
 
