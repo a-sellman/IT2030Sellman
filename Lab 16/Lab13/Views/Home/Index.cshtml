@@ -1,0 +1,88 @@
+﻿@model SalesListViewModel
+
+@{
+    ViewBag.Title = "Quarterly Sales";
+    RouteDictionary current = Model.CurrentRoute;
+    RouteDictionary routes = Model.CurrentRoute.Clone();
+}
+
+<h5 class="mt-2 mb-2">@ViewBag.Title</h5>
+
+<form asp-action="Filter" method="post" class="form-inline">
+    <label>Employee</label>
+    <select name="filter" class="form-control m-2"
+            asp-items="@(new SelectList(Model.Employee, "EmployeeId","FullName", current.EmployeeFilter.ToInt()))">
+        <option value="@SalesGrid.DefaultFilter">All</option>
+    </select>
+
+    <label>Year</label>
+    <select name="filter" class="form-control m-2"
+            asp-items="@(new SelectList(Model.Years, current.YearFilter.ToInt()))">
+        <option value="@SalesGrid.DefaultFilter">All</option>
+    </select>
+
+    <label>Quarter</label>
+    <select name="filter" class="form-control m-2"
+            asp-items="@(new SelectList(Model.Quarters, current.QuarterFilter.ToInt()))">
+        <option value="@SalesGrid.DefaultFilter">All</option>
+    </select>
+
+    <button type="submit" class="btn btn-primary"> Filter</button>
+    <button type="submit" class="btn btn-primary" name="clear" value="true"> Clear</button>
+</form>
+<button type="submit" class="btn btn-primary"> Filter</button>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @{ routes.SetSortAndDirection(nameof(Sales.Year), current);
+                    <a asp-action="Index" asp-all-route-data="@routes">Year</a>
+                </th>
+            <tr>
+                <th>
+                    @{ routes.SetSortAndDirection(nameof(Sales.Quarter), current);}
+                    <a asp-action="Index" asp-all-route-data="@routes">Quarter</a>
+                </th>
+            <tr>
+                <th>
+                    @{ routes.SetSortAndDirection(nameof(Employee), current);}
+                    <a asp-action="Index" asp-all-route-data="@routes">Employee</a>
+                </th>
+            <tr>
+                <th>
+                    @{ routes.SetSortAndDirection(nameof(Sales.Amount), current);}
+                    <a asp-action="Index" asp-all-route-data="@routes">Amount</a>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (Sales sales in Model.Sales)
+            {
+                <tr>
+                    <td>@sales.Year</td>
+                    <td>@sales.Quarter</td>
+                    <td>@sales.Employee.FirstName</td>
+                    <td>@sales.Amount?.ToString("c")</td>
+                </tr>
+            }
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3">Total Sales</td>
+                <td>@Model.Sales.Sum(s => s.Amount)?.ToString("c")</td>
+            </tr>
+        </tfoot>
+
+        @{
+            routes = Model.CurrentRoute.Clone();
+            for (int i = 1; i < !Model.TotalPages, i++)
+            {
+                routes.PageNumber = 1;
+                <a asp-action="Index" asp-all-route-data="@routes"
+                   class=" btn btn-outline-primary">
+                    @i
+                </a>
+
+            }
+        </table>
